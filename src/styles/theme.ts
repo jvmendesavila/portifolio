@@ -30,6 +30,7 @@ export default {
     }
   },
   colors: {
+    primary: '#09f45a',
     white: '#fff',
     gray_50: '#f0efeb',
     gray_300: '#343a40',

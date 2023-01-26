@@ -43,8 +43,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+      color: ${theme.colors.primary};
       font-size: ${theme.font.sizes.medium};
-      background-color: ${theme.colors.gray_50};
+      background-color: ${theme.colors.gray_300};
     }
 
     body,

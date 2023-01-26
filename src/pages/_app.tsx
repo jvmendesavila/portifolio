@@ -1,3 +1,4 @@
+import { Menu } from 'components/Menu';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
@@ -16,6 +17,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="Project" />
       </Head>
+      <Menu />
       <Component {...pageProps} />
       <GlobalStyles />
     </ThemeProvider>
