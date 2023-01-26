@@ -7,16 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
     "typecheck": "tsc --project tsconfig.json --noEmit",
-    "lint": "eslint src --max-warnings=0",
-    "postinstall": "husky install",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "test:watch": "yarn test --watch",
-    "generate": "yarn plop --plopfile generators/plopfile.js",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "lint": "eslint src --max-warnings=0"
   },
   "husky": {
     "hooks": {
