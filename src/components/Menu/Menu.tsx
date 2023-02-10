@@ -1,36 +1,48 @@
+'use client';
 import Link from 'next/link';
-import * as S from './styles';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
+import { Locale } from '@/internationalization/i18n-config';
 
-export default function Menu() {
-  const router = useRouter();
-  const currentRoute = router.pathname;
+// Components 
+import ThemeButton from '../Theme/Button';
+import LocaleSwitcher from '../Theme/LocationSwitcher/LocationSwitcher';
+
+export default function Menu({lang,dictionary}:{lang:Locale,dictionary:any}) {
+  const currentRoute = usePathname();
   const menuList = [
-    { href: '/', name: 'About' },
-    { href: '/experiences', name: 'Experiences' },
-    { href: '/projects', name: 'Projects' }
+    { href: '', name: dictionary['server-component'].home },
+    { href: '/about', name: dictionary['server-component'].about },
+    { href: '/projects', name: dictionary['server-component'].projects },
   ];
 
   return (
     <>
-      <S.Container>
+      <div className="flex items-center justify-between h-20 px-8 py-4">
         <div>
-          <S.Name>João Victor Mendes Ávila</S.Name>
-          <S.Occupation>Software Engineer / Mid-Level</S.Occupation>
+          <p>João Victor Mendes Ávila</p>
+          <p className='text-xs font-bold'>BCS / Software Engineer / Mid-Level</p>
         </div>
 
-        <div>
-          {menuList.map(({ href, name }) => (
-            <Link
-              className={currentRoute === href ? 'active' : ''}
-              key={href}
-              href={href}
-            >
-              {name}
-            </Link>
-          ))}
+        <div className="flex items-center">
+          <div className="pr-16 font-bold">
+            {menuList.map(({ href, name }) => (
+              <Link
+                key={href}
+                href={lang + href}
+                className={`mx-8 ` + (currentRoute === ('/'+lang+href) ? 'text-blue-500' : 'active:text-blue-500 hover:text-blue-500')}
+              >
+                {name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Light | Dark Button Theme */}
+          <ThemeButton/>
+          
+          {/* Languages */}
+          <LocaleSwitcher/>
         </div>
-      </S.Container>
+      </div>
     </>
   );
 }
