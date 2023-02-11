@@ -1,31 +1,38 @@
 import '../globals.css'
-import { Locale } from '@/internationalization/i18n-config'
 import ThemeProviderComponent from '@/components/Theme/Provider'
-import { getDictionary } from '@/internationalization/get-dictionary';
 import { Menu } from '@/components/Menu';
+import { i18n } from '@/internationalization/i18n-config';
+import { getDictionary } from '@/internationalization/get-dictionary';
+
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }))
+}
 
 export default async function RootLayout({
-  children,
-  params
-}: {
-  children: React.ReactNode,
-  params: { lang: Locale }
-}) {
-  const dictionary = await getDictionary(params.lang);
+  params: { lang, children },
+}: any) {
+  const dictionary = await getDictionary(lang)
   return (
-    <html className="dark">
+    <html lang={lang}>
       <head />
         <body>
         <ThemeProviderComponent>
-          <>
-            {/* Header */}
-            <Menu lang={params.lang} dictionary={dictionary}/>
-            
-            {/* Content */}
-            <div className="px-8 pt-8 border-t-2 border-t-indigo-500">
-              {children}
+          {/* Header */}
+          <div className="flex items-center justify-between h-20 px-8 py-4">
+            <div>
+              <p>João Victor Mendes Ávila</p>
+              <p className='text-xs font-bold'>BCS / Software Engineer / Mid-Level</p>
             </div>
-          </>
+
+            <div className="flex items-center">
+              <Menu dictionary={dictionary.counter}/>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="px-8 pt-8 border-t-2 border-t-indigo-500">
+            {children}
+          </div>
         </ThemeProviderComponent>
         </body>
     </html>
