@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 }
 
 export default async function RootLayout({
-  params: { lang, children },
+  params: { lang }, children
 }: any) {
   const dictionary = await getDictionary(lang)
   return (
