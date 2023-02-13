@@ -1,10 +1,12 @@
 {
   "server-component": {
-    "welcome": "Bem vindo"
+    "welcome-message": "Bacharelado em Ciências da Computação e sempre em busca de desafios, sou um engenheiro de software que ama tecnologia e tenho: - Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's. - 1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL",
+    "experiences": "Experiências",
+    "projects": "Projetos"
   },
   "counter": {
     "home": "Início",
-    "about": "Sobre",
+    "experiences": "Experiências",
     "projects": "Projetos"
   }
 }

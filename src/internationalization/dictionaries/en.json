@@ -1,10 +1,12 @@
 {
   "server-component": {
-    "welcome": "Welcome"
+    "welcome-message": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology and has:- More than 5 years of experience as an Front-End Developer, I already worked with AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrations with MaxiPago, Firebase and Google Maps API's, Unit Test(Jest), CI/CD(Gitlab/Github), Docker, Kubernets, Rancher, Monitoring (Datadog). - 1 year of experience as an Back-End Developer, working with JAVA, Spring MVC, Spring Boot, MongoDB and MySQL.",
+    "experiences": "Experiences",
+    "projects": "Projects"
   },
   "counter": {
     "home": "Home",
-    "about": "About",
+    "experiences": "Experiences",
     "projects": "Projects"
   }
 }
