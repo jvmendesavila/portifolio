@@ -37,41 +37,29 @@ export default function Menu({
   ];
 
   return (
-    <>
-      <div className="pr-16 font-bold">
-        {menuList.map(({ href, name }) => (
+    <div className="flex-col">
+      {menuList.map(({ href, name }) => (
+        <div key={href} className="font-bold py-4 text-center">
           <Link
-            key={href}
             href={lang + href}
-            className={
-              `mx-8 text-sm ` +
-              (currentRoute === '/' + lang + href
-                ? 'text-blue-500'
-                : 'active:text-blue-500 hover:text-blue-500')
-            }
+            className={'mx-8 text-sm hover:text-blue-500'}
           >
             {name}
           </Link>
-        ))}
-      </div>
-
-      {/* Light | Dark Button Theme */}
-      <ThemeButton />
+        </div>
+      ))}
 
       {/* Languages */}
-      <LocaleSwitcher />
+      <div className="flex items-center justify-center py-6">
+        <LocaleSwitcher />
+        <ThemeButton />
+      </div>
 
-      <Image
-        alt="leeerob"
-        src={githubPNG}
-        className="h-7 w-7 p-1 m-2 rounded-lg bg-slate-700 cursor-pointer"
-      />
+      <div className="flex justify-center mt-auto pt-24">
+        <Image alt="leeerob" src={githubPNG} className="h-7 w-7 p-1 m-2" />
 
-      <Image
-        alt="leeerob"
-        src={linkedinPNG}
-        className="h-7 w-7 p-1 m-2 rounded-lg bg-slate-700 cursor-pointer"
-      />
-    </>
+        <Image alt="leeerob" src={linkedinPNG} className="h-7 w-7 p-1 m-2" />
+      </div>
+    </div>
   );
 }
