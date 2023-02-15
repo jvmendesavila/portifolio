@@ -10,22 +10,24 @@ import { Menu } from '../Menu';
 import avatar from '@/assets/images/avatar.png';
 import useWindow from './hooks/useWindow';
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { useTheme } from 'next-themes';
 
 const Header = (props: any) => {
   const [width] = useWindow();
+  const { theme } = useTheme();
   const [isShowing, setIsShowing] = React.useState(false);
   return (
     <>
       {isShowing ? (
         <XMarkIcon
           role="button"
-          className="fixed z-10 top-2 right-6 sm:invisible w-7 h-7"
+          className="fixed z-10 top-6 right-6 sm:invisible w-7 h-7"
           onClick={() => setIsShowing((isShowing) => !isShowing)}
         />
       ) : (
         <Bars2Icon
           role="button"
-          className="fixed z-10 top-2 right-6 sm:invisible w-7 h-7"
+          className="fixed z-10 top-6 right-6 sm:invisible w-7 h-7"
           onClick={() => setIsShowing((isShowing) => !isShowing)}
         />
       )}
@@ -38,9 +40,21 @@ const Header = (props: any) => {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="fixed w-screen min-w-max px-1 h-screen border-r-2 border-r-indigo-500 sm:static sm:flex-col sm:w-48 bg-black">
+        <div
+          className={
+            'fixed w-screen min-w-max px-1 h-screen border-r-2 border-r-indigo-500 sm:static sm:flex-col sm:w-48 ' +
+            (theme === 'dark' ? 'bg-black' : 'bg-white')
+          }
+        >
           <div className="flex-col items-center pt-3">
-            <div className="bg-repeat w-full h-full text-primary-100 heropattern-signal-gray-900">
+            <div
+              className={
+                'bg-repeat w-full h-full text-primary-100 ' +
+                (theme === 'dark'
+                  ? 'heropattern-signal-gray-900'
+                  : 'heropattern-signal-gray-100')
+              }
+            >
               <div className="flex justify-center">
                 <Image
                   src={avatar}

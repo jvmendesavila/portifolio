@@ -24,7 +24,7 @@ export default async function RootLayout({ params: { lang }, children }: any) {
             <Header dictionary={dictionary} />
 
             {/* Content */}
-            <div className="px-8 pt-8  h-screen overflow-auto">{children}</div>
+            <div className="px-8 pt-16  h-screen overflow-auto">{children}</div>
           </div>
         </ThemeProviderComponent>
       </body>
