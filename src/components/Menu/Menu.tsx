@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
 import { usePathname } from 'next/navigation';
 
 // Components
@@ -12,23 +11,28 @@ import LocaleSwitcher from '../Theme/LocationSwitcher/LocationSwitcher';
 import githubPNG from '@/assets/images/profiles/github.png';
 import linkedinPNG from '@/assets/images/profiles/linkedin.png';
 
+const profiles = [
+  { href: 'https://github.com/jvmendesavila', alt: 'Github', src: githubPNG },
+  {
+    href: 'https://www.linkedin.com/in/jo%C3%A3o-victor-mendes-%C3%A1vila-699b76158/',
+    alt: 'Linkedin',
+    src: linkedinPNG
+  }
+];
+
 export default function Menu({
-  dictionary
+  dictionary,
+  setIsShowing
 }: {
   dictionary: {
     home: string;
     experiences: string;
     projects: string;
   };
+  setIsShowing: (showing: boolean) => void;
 }) {
-  const { theme } = useTheme();
   const currentRoute = usePathname();
   const lang = currentRoute?.split('/')[1];
-
-  const profilesList = [
-    { alt: 'github', image: githubPNG },
-    { alt: 'linkedin', image: linkedinPNG }
-  ];
 
   const menuList = [
     { href: '', name: dictionary.home },
@@ -37,11 +41,13 @@ export default function Menu({
   ];
 
   return (
-    <div className="flex-col">
+    <div className="flex-col w-full">
+      {/* Tabs */}
       {menuList.map(({ href, name }) => (
         <div key={href} className="font-bold py-4 text-center">
           <Link
             href={lang + href}
+            onClick={() => setIsShowing(false)}
             className={'mx-8 text-sm hover:text-blue-500'}
           >
             {name}
@@ -49,16 +55,23 @@ export default function Menu({
         </div>
       ))}
 
-      {/* Languages */}
+      {/* Languages & Theme(Dark/Light) */}
       <div className="flex items-center justify-center py-6">
         <LocaleSwitcher />
         <ThemeButton />
       </div>
 
+      {/* Profiles */}
       <div className="flex justify-center mt-auto pt-24">
-        <Image alt="leeerob" src={githubPNG} className="h-7 w-7 p-1 m-2" />
-
-        <Image alt="leeerob" src={linkedinPNG} className="h-7 w-7 p-1 m-2" />
+        {profiles.map(({ href, alt, src }) => (
+          <Link key={alt} href={href} target="_blank">
+            <Image
+              alt={alt}
+              src={src}
+              className="contrast-50 h-7 w-7 p-1 m-2"
+            />
+          </Link>
+        ))}
       </div>
     </div>
   );
