@@ -1,12 +1,58 @@
 {
   "server-component": {
-    "welcome-message": "Bacharelado em Ciências da Computação e sempre em busca de desafios, sou um engenheiro de software que ama tecnologia e tenho: - Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's. - 1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL",
-    "experiences": "Experiências",
-    "projects": "Projetos"
+    "home": "Inicio",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "experiences": "Experiências"
   },
-  "counter": {
-    "home": "Início",
-    "experiences": "Experiências",
-    "projects": "Projetos"
+  "home-page": {
+    "hi": "Olá! Eu sou Victor Mendes Ávila",
+    "introduction": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará(UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia."
+  },
+  "about-page": {
+    "introduction": "Desenvolvedor de Software com:",
+    "paragraphs": [
+      {
+        "paragraph": "Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's."
+      },
+      {
+        "paragraph": "1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL."
+      }
+    ]
+  },
+  "experiences-page": {
+    "companies": [
+      {
+        "actual": true,
+        "name": "Americanas",
+        "dateEnd": "",
+        "dateStart": "2021,03,12",
+        "job-title": "Front-End Engineer / Mid-Level",
+        "skills": " Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · GatlingCompetências: Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · Gatling",
+        "activities": [
+          {
+            "activity": "Load Tests - Criar testes de carga nas aplicações com Gatling."
+          },
+          {
+            "activity": "CI/CD - Desenvolvimento de pipelines usando Ansible, Docker, Nginx, construindo estágios diferentes e específicos para testes unitários, imagens docker e deploy(ansible e k8s)."
+          },
+          {
+            "activity": "Kubernets - Usando Helm para manipular arquivos .yaml para se conectar com o Rancher e fazer deploy de aplicações, criando deployments, persistent volumes, persistent volumes claim, services e pods com configurações específicas: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdates e limites de recursos. "
+          },
+          {
+            "activity": "ReactJS - Desenvolvimento de components, contextos, arquivos .tsx, testes unitários, Material UI, Clean Code e boas práticas(SOLID / Principles of Functional Programming). "
+          },
+          {
+            "activity": "Google Maps Javascript API - Desenvolvimento de Clusters Customizados, Marcadores Customizados, Estilização de mapas e arquivos KML."
+          },
+          {
+            "activity": "Usar Sonarqube para achar códigos sujos e junto com Jest garantir cobertura de testes para garantir um código limpo e com boas práticas."
+          },
+          {
+            "activity": "Observability - Analisar gráficos identificando anomalias no sistema e correções de recursos necessários com o auxilio de ferramentas como Datadog & Grafana."
+          }
+        ]
+      }
+    ]
   }
 }

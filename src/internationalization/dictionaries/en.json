@@ -1,12 +1,58 @@
 {
   "server-component": {
-    "welcome-message": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology and has:- More than 5 years of experience as an Front-End Developer, I already worked with AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrations with MaxiPago, Firebase and Google Maps API's, Unit Test(Jest), CI/CD(Gitlab/Github), Docker, Kubernets, Rancher, Monitoring (Datadog). - 1 year of experience as an Back-End Developer, working with JAVA, Spring MVC, Spring Boot, MongoDB and MySQL.",
-    "experiences": "Experiences",
-    "projects": "Projects"
-  },
-  "counter": {
     "home": "Home",
-    "experiences": "Experiences",
-    "projects": "Projects"
+    "about": "About",
+    "projects": "Projects",
+    "experiences": "Experiences"
+  },
+  "home-page": {
+    "hi": "Hi! I'm Victor Mendes Ávila",
+    "introduction": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology."
+  },
+  "about-page": {
+    "introduction": "Software Developer with:",
+    "paragraphs": [
+      {
+        "paragraph": "More than 5 years of experience as an Front-End Developer, I already worked with AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrations with MaxiPago, Firebase and Google Maps API's, Unit Test(Jest), CI/CD(Gitlab/Github), Docker, Kubernets, Rancher, Monitoring (Datadog)."
+      },
+      {
+        "paragraph": "1 year of experience as an Back-End Developer, working with JAVA, Spring MVC, Spring Boot, MongoDB and MySQL."
+      }
+    ]
+  },
+  "experiences-page": {
+    "companies": [
+      {
+        "actual": true,
+        "name": "Americanas",
+        "dateEnd": "",
+        "dateStart": "2021,03,12",
+        "job-title": "Front-End Engineer / Mid-Level",
+        "skills": " Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · GatlingCompetências: Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · Gatling",
+        "activities": [
+          {
+            "activity": "Load Tests - Creating load tests with Gatling writing and running specifics scenarios."
+          },
+          {
+            "activity": "CI/CD - Working with gitlab pipelines using Ansible, Docker, Nginx making differents and specifics stages to tests, build docker image and deploy(ansible and k8s)."
+          },
+          {
+            "activity": "Kubernets - Using Helm to manage .yaml files to make connections with Rancher and deploy apps on Clusters creating deployments, persistent volumes, persistent volumes claim, services, ingresses and pods with specifics configs: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdate and resources limits. "
+          },
+          {
+            "activity": "ReactJS - Working with components, contexts, .tsx files, unit tests, Material UI, Clean Code and good pratices(SOLID / Principles of Functional Programming)."
+          },
+          {
+            "activity": "Google Maps Javascript API - Working with KML files, Custom Clustering and Custom Markers, Creating Styles for the Map."
+          },
+          {
+            "activity": "Using Sonarqube to find smell codes and with Jest ensure test coverage to ensure a code clean and with good practices."
+          },
+          {
+            "activity": "Observability - Analyze graphs identifying anomalies in the system and corrections of necessary resources with the help of tools such as Datadog & Grafana."
+          }
+        ]
+      }
+    ]
   }
 }

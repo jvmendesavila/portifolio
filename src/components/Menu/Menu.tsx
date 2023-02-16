@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -10,6 +9,7 @@ import LocaleSwitcher from '../Theme/LocationSwitcher/LocationSwitcher';
 // Assests
 import githubPNG from '@/assets/images/profiles/github.png';
 import linkedinPNG from '@/assets/images/profiles/linkedin.png';
+import { dictionaryType } from '@/types/dictionaryType';
 
 const profiles = [
   { href: 'https://github.com/jvmendesavila', alt: 'Github', src: githubPNG },
@@ -24,20 +24,18 @@ export default function Menu({
   dictionary,
   setIsShowing
 }: {
-  dictionary: {
-    home: string;
-    experiences: string;
-    projects: string;
-  };
+  dictionary: dictionaryType;
   setIsShowing: (showing: boolean) => void;
 }) {
   const currentRoute = usePathname();
   const lang = currentRoute?.split('/')[1];
 
   const menuList = [
-    { href: '', name: dictionary.home },
-    { href: '/experiences', name: dictionary.experiences },
-    { href: '/projects', name: dictionary.projects }
+    { href: '', name: dictionary['server-component'].home },
+    { href: '/about', name: dictionary['server-component'].about },
+    { href: '/experiences', name: dictionary['server-component'].experiences },
+    { href: '/projects', name: dictionary['server-component'].projects },
+    { href: '/blog', name: 'Blog' }
   ];
 
   return (
@@ -48,7 +46,7 @@ export default function Menu({
           <Link
             href={lang + href}
             onClick={() => setIsShowing(false)}
-            className={'mx-8 text-sm hover:text-blue-500'}
+            className={'mx-8 hover:text-blue-500'}
           >
             {name}
           </Link>
@@ -56,13 +54,13 @@ export default function Menu({
       ))}
 
       {/* Languages & Theme(Dark/Light) */}
-      <div className="flex items-center justify-center py-6">
+      <div className="flex items-center justify-center py-2">
         <LocaleSwitcher />
         <ThemeButton />
       </div>
 
       {/* Profiles */}
-      <div className="flex justify-center mt-auto pt-24">
+      <div className="flex justify-center mt-auto pt-4">
         {profiles.map(({ href, alt, src }) => (
           <Link key={alt} href={href} target="_blank">
             <Image

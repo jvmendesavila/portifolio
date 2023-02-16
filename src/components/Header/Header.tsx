@@ -12,7 +12,10 @@ import useWindow from './hooks/useWindow';
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import { useTheme } from 'next-themes';
 
-const Header = (props: any) => {
+// Types
+import { dictionaryType } from '@/types/dictionaryType';
+
+const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
   const [width] = useWindow();
   const { theme } = useTheme();
   const [isShowing, setIsShowing] = React.useState(false);
@@ -74,10 +77,7 @@ const Header = (props: any) => {
           </div>
 
           <div className="flex items-center">
-            <Menu
-              setIsShowing={setIsShowing}
-              dictionary={props.dictionary.counter}
-            />
+            <Menu setIsShowing={setIsShowing} dictionary={dictionary} />
           </div>
         </div>
       </Transition>

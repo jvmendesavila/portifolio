@@ -1,13 +1,14 @@
-import { getDictionary } from '@/internationalization/get-dictionary';
 import { Locale } from '@/internationalization/i18n-config';
+import { getDictionary } from '@/internationalization/get-dictionary';
 
-async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const dictionary = await getDictionary(lang);
+const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
+  const { ['home-page']: dictionary } = await getDictionary(lang);
   return (
-    <h2 className="font-medium mb-8 text-xl">
-      {dictionary['server-component']['welcome-message']}
-    </h2>
+    <>
+      <p className="font-medium mb-8 text-xl">{dictionary.hi}</p>
+      <p>{dictionary.introduction}</p>
+    </>
   );
-}
+};
 
 export default Home;
