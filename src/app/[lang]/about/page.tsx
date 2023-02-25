@@ -14,13 +14,13 @@ const About = async ({ params: { lang } }: { params: { lang: Locale } }) => {
     >
       <div className="flex items- justify-center pb-4">
         <BookOpenIcon className="h-8" />
-        <p className="text-2xl text-center pl-4">{dictionary.introduction}</p>
+        <p className="text-xl text-center pl-2">{dictionary.introduction}</p>
       </div>
       {dictionary.paragraphs.map((p) => (
         <>
-          <p className="pb-4">{p.paragraph}</p>
+          <p className="pb-4 text-sm">{p.paragraph}</p>
           {p.subparagraphs.map((subP) => (
-            <p className="pb-4 text-sm">{subP.paragraph}</p>
+            <p className="pb-4 text-xs">{subP.paragraph}</p>
           ))}
         </>
       ))}
