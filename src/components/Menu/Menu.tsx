@@ -6,17 +6,19 @@ import { usePathname } from 'next/navigation';
 import ThemeButton from '../Theme/Button';
 import LocaleSwitcher from '../Theme/LocationSwitcher/LocationSwitcher';
 
-// Assests
-import githubPNG from '@/assets/images/profiles/github.png';
-import linkedinPNG from '@/assets/images/profiles/linkedin.png';
+// Types
 import { dictionaryType } from '@/types/dictionaryType';
 
 const profiles = [
-  { href: 'https://github.com/jvmendesavila', alt: 'Github', src: githubPNG },
+  {
+    href: 'https://github.com/jvmendesavila',
+    alt: 'Github',
+    imagePath: '/images/profiles/github.png'
+  },
   {
     href: 'https://www.linkedin.com/in/jo%C3%A3o-victor-mendes-%C3%A1vila-699b76158/',
     alt: 'Linkedin',
-    src: linkedinPNG
+    imagePath: '/images/profiles/linkedin.png'
   }
 ];
 
@@ -33,9 +35,9 @@ export default function Menu({
   const menuList = [
     { href: '', name: dictionary['server-component'].home },
     { href: '/about', name: dictionary['server-component'].about },
-    { href: '/experiences', name: dictionary['server-component'].experiences },
-    { href: '/projects', name: dictionary['server-component'].projects },
-    { href: '/blog', name: 'Blog' }
+    { href: '/experiences', name: dictionary['server-component'].experiences }
+    // { href: '/projects', name: dictionary['server-component'].projects },
+    // { href: '/blog', name: 'Blog' }
   ];
 
   return (
@@ -61,12 +63,14 @@ export default function Menu({
 
       {/* Profiles */}
       <div className="flex justify-center mt-auto pt-4">
-        {profiles.map(({ href, alt, src }) => (
+        {profiles.map(({ href, alt, imagePath }) => (
           <Link key={alt} href={href} target="_blank">
             <Image
               alt={alt}
-              src={src}
-              className="contrast-50 h-7 w-7 p-1 m-2"
+              width="28"
+              height="28"
+              src={imagePath}
+              className="contrast-50 p-1 m-2"
             />
           </Link>
         ))}

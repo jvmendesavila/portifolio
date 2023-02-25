@@ -6,11 +6,13 @@
     "experiences": "Experiências"
   },
   "home-page": {
-    "hi": "Olá! Eu sou Victor Mendes Ávila",
-    "introduction": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará(UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia."
+    "hi": "Olá!",
+    "me": "Eu sou Victor Mendes Ávila",
+    "position": "Desenvolvedor de Software | Front-end Pleno",
+    "introduction": ""
   },
   "about-page": {
-    "introduction": "Desenvolvedor de Software com:",
+    "introduction": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará(UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia com:",
     "paragraphs": [
       {
         "paragraph": "Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's."
@@ -21,38 +23,37 @@
     ]
   },
   "experiences-page": {
-    "companies": [
-      {
-        "actual": true,
-        "name": "Americanas",
-        "dateEnd": "",
-        "dateStart": "2021,03,12",
-        "job-title": "Front-End Engineer / Mid-Level",
-        "skills": " Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · GatlingCompetências: Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · Gatling",
+    "companies": {
+      "americanas": {
         "activities": [
-          {
-            "activity": "Load Tests - Criar testes de carga nas aplicações com Gatling."
-          },
-          {
-            "activity": "CI/CD - Desenvolvimento de pipelines usando Ansible, Docker, Nginx, construindo estágios diferentes e específicos para testes unitários, imagens docker e deploy(ansible e k8s)."
-          },
-          {
-            "activity": "Kubernets - Usando Helm para manipular arquivos .yaml para se conectar com o Rancher e fazer deploy de aplicações, criando deployments, persistent volumes, persistent volumes claim, services e pods com configurações específicas: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdates e limites de recursos. "
-          },
-          {
-            "activity": "ReactJS - Desenvolvimento de components, contextos, arquivos .tsx, testes unitários, Material UI, Clean Code e boas práticas(SOLID / Principles of Functional Programming). "
-          },
-          {
-            "activity": "Google Maps Javascript API - Desenvolvimento de Clusters Customizados, Marcadores Customizados, Estilização de mapas e arquivos KML."
-          },
-          {
-            "activity": "Usar Sonarqube para achar códigos sujos e junto com Jest garantir cobertura de testes para garantir um código limpo e com boas práticas."
-          },
-          {
-            "activity": "Observability - Analisar gráficos identificando anomalias no sistema e correções de recursos necessários com o auxilio de ferramentas como Datadog & Grafana."
-          }
+          "Load Tests - Criar testes de carga nas aplicações com Gatling.",
+          "CI/CD - Desenvolvimento de pipelines usando Ansible, Docker, Nginx, construindo estágios diferentes e específicos para testes unitários, imagens docker e deploy(ansible e k8s).",
+          "ReactJS - Desenvolvimento de components, contextos, arquivos .tsx, testes unitários, Material UI, Clean Code e boas práticas(SOLID / Principles of Functional Programming). ",
+          "Google Maps Javascript API - Desenvolvimento de Clusters Customizados, Marcadores Customizados, Estilização de mapas e arquivos KML.",
+          "Usar Sonarqube para achar códigos sujos e junto com Jest garantir cobertura de testes para garantir um código limpo e com boas práticas.",
+          "Observability - Analisar gráficos identificando anomalias no sistema e correções de recursos necessários com o auxilio de ferramentas como Datadog & Grafana.",
+          "Kubernets - Usando Helm para manipular arquivos .yaml para se conectar com o Rancher e fazer deploy de aplicações, criando deployments, persistent volumes, persistent volumes claim, services e pods com configurações específicas: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdates e limites de recursos. "
+        ]
+      },
+      "ipersonality": {
+        "activities": [
+          "Criar uma rede profissional com mapeamento de softskills e trilha de desenvolvimento com Inteligência Artificial utilizando principalmente NextJS, Redux Saga e Material UI: ",
+          "https://www.goowit.com",
+          "Criar páginas web, chat entre usuários com websockets, trilha de desenvolvimento com IA e tradução para EN.",
+          "Desenvolvimento de interfaces responsívas usando Semantic-UI, Material-UI, Flexbox e seus conceitos, HTML, CSS(Media-Query and CSS Animações Simples).",
+          "Manipulação do estado da aplicação usando Redux-Thunk, Redux-Saga, SSO, NextJS, ReactJS, Ducks, Sagas, Hooks, High Order Components(HOCs).",
+          "Comunicação com Back-end usando apisauce e axios, implementando estratégias de Throttling e Debouce com Redux-Saga.",
+          "Traduzir site para PT-Br/En-USA using react.i18next."
+        ]
+      },
+      "elevar": {
+        "activities": [
+          "Front-End: Trabalhando com JavaScript, HTML5, CSS3, Angular JS.",
+          "Back-End: Trabalhando com JAVA, Spring MVC, Spring Boot.",
+          "Sistema PocketPet (Sistema de gerenciamento de serviços voltados a pet's): Criando CRUD's | Integração com MaxiPago API de pagamento de cartão de crédito | Integração com Firebase API para construção de websockets",
+          "Sistema Handover (Sistema de gerenciamento e acompanhamento de serviços de forma geral):  Criação de deashboards |  Integração com GoogleMaps API para trabalhar com mapas customizados | Criando Models com SQL Server | Resolvendo Bugs "
         ]
       }
-    ]
+    }
   }
 }

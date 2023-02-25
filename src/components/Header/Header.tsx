@@ -1,16 +1,18 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
 import { Transition } from '@headlessui/react';
+import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 // Component
 import { Menu } from '../Menu';
 
-// Assets
-import avatar from '@/assets/images/avatar.png';
+// Hooks
 import useWindow from './hooks/useWindow';
-import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
-import { useTheme } from 'next-themes';
+
+// Assets
+import AvatarImage from '@/assets/images/avatar.png';
 
 // Types
 import { dictionaryType } from '@/types/dictionaryType';
@@ -20,7 +22,7 @@ const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
   const { theme } = useTheme();
   const [isShowing, setIsShowing] = React.useState(false);
   return (
-    <>
+    <div className="relative z-20">
       {isShowing ? (
         <XMarkIcon
           role="button"
@@ -60,10 +62,10 @@ const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
             >
               <div className="flex justify-center">
                 <Image
-                  src={avatar}
+                  src={AvatarImage}
                   placeholder="blur"
                   className="h-24 w-24 mt-2 rounded-full"
-                  alt="Vctor Mendes Avila"
+                  alt="Victor Mendes Avila"
                 />
               </div>
               <div className="pt-4">
@@ -81,7 +83,7 @@ const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
           </div>
         </div>
       </Transition>
-    </>
+    </div>
   );
 };
 

@@ -6,11 +6,13 @@
     "experiences": "Experiences"
   },
   "home-page": {
-    "hi": "Hi! I'm Victor Mendes Ávila",
-    "introduction": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology."
+    "hi": "Hi!",
+    "me": "I'm Victor Mendes Ávila",
+    "position": "Software Developer | Front-end Mid Level",
+    "introduction": ""
   },
   "about-page": {
-    "introduction": "Software Developer with:",
+    "introduction": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology with:",
     "paragraphs": [
       {
         "paragraph": "More than 5 years of experience as an Front-End Developer, I already worked with AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrations with MaxiPago, Firebase and Google Maps API's, Unit Test(Jest), CI/CD(Gitlab/Github), Docker, Kubernets, Rancher, Monitoring (Datadog)."
@@ -21,38 +23,37 @@
     ]
   },
   "experiences-page": {
-    "companies": [
-      {
-        "actual": true,
-        "name": "Americanas",
-        "dateEnd": "",
-        "dateStart": "2021,03,12",
-        "job-title": "Front-End Engineer / Mid-Level",
-        "skills": " Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · GatlingCompetências: Aplicativos web · Jest · TypeScript · HTML · Revisão de código · Webpack · Programação (computação) · Metodologias Agile · API REST · Grafana · Datadog · Google Maps · Web Design Responsivo · Material-UI · Integração e entrega contínuas (CI/CD) · GitLab · AWS · JavaScript · HTML5 · CSS · Git · ReactJS · Docker · Portuguese · Inglês Intermediario · Material UI · Kubernetes · Helm · Gatling",
+    "companies": {
+      "americanas": {
         "activities": [
-          {
-            "activity": "Load Tests - Creating load tests with Gatling writing and running specifics scenarios."
-          },
-          {
-            "activity": "CI/CD - Working with gitlab pipelines using Ansible, Docker, Nginx making differents and specifics stages to tests, build docker image and deploy(ansible and k8s)."
-          },
-          {
-            "activity": "Kubernets - Using Helm to manage .yaml files to make connections with Rancher and deploy apps on Clusters creating deployments, persistent volumes, persistent volumes claim, services, ingresses and pods with specifics configs: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdate and resources limits. "
-          },
-          {
-            "activity": "ReactJS - Working with components, contexts, .tsx files, unit tests, Material UI, Clean Code and good pratices(SOLID / Principles of Functional Programming)."
-          },
-          {
-            "activity": "Google Maps Javascript API - Working with KML files, Custom Clustering and Custom Markers, Creating Styles for the Map."
-          },
-          {
-            "activity": "Using Sonarqube to find smell codes and with Jest ensure test coverage to ensure a code clean and with good practices."
-          },
-          {
-            "activity": "Observability - Analyze graphs identifying anomalies in the system and corrections of necessary resources with the help of tools such as Datadog & Grafana."
-          }
+          "Load Tests - Creating load tests with Gatling writing and running specifics scenarios.",
+          "CI/CD - Working with gitlab pipelines using Ansible, Docker, Nginx making differents and specifics stages to tests, build docker image and deploy(ansible and k8s).",
+          "ReactJS - Working with components, contexts, .tsx files, unit tests, Material UI, Clean Code and good pratices(SOLID / Principles of Functional Programming).",
+          "Google Maps Javascript API - Working with KML files, Custom Clustering and Custom Markers, Creating Styles for the Map.",
+          "Using Sonarqube to find smell codes and with Jest ensure test coverage to ensure a code clean and with good practices.",
+          "Observability - Analyze graphs identifying anomalies in the system and corrections of necessary resources with the help of tools such as Datadog & Grafana.",
+          "Kubernets - Using Helm to manage .yaml files to make connections with Rancher and deploy apps on Clusters creating deployments, persistent volumes, persistent volumes claim, services, ingresses and pods with specifics configs: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdate and resources limits. "
+        ]
+      },
+      "ipersonality": {
+        "activities": [
+          "Create a professional network with softskills mapping and development path with Artificial Intelligence using mainly NextJS, Redux Saga and Material UI, more than 300.000 users and 1.000 companys:",
+          "https://www.goowit.com",
+          "Creating Web Pages, Chats beetwen users with websockets, AI-powered learning trail and EN translate. ",
+          "Building responsive interfaces using Semantic-UI, Material-UI, Flexbox concepts, HTML and CSS(Media-Query and Simple Animations).",
+          "Handle application state using Redux-Thunk, Redux-Saga, SSO, NextJS, ReactJS, Ducks, Sagas, Hooks, High Order Components(HOCs).",
+          "Making connections with Back-end using apisauce and axios, building Throttling e Debounce strategy's with Redux-Saga.",
+          "Translate website to PT-Br/En-USA using react.i18next."
+        ]
+      },
+      "elevar": {
+        "activities": [
+          "Front-End: Working with JavaScript, HTML5, CSS3, Angular JS.",
+          "Back-End: Working with JAVA, Spring MVC, Spring Boot.",
+          "PocketPet System (Pet services management system): Creating CRUD's |  Integration with MaxiPago credit card payment API | Integration with Firebase API to create websockets",
+          "Handover System (General service management and monitoring system):  Creating Deashboards | Integration with GoogleMaps API to work with custom maps | Creating Models with SQL Server | Resolving Bugs "
         ]
       }
-    ]
+    }
   }
 }
