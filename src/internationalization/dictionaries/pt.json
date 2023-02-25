@@ -12,13 +12,18 @@
     "introduction": ""
   },
   "about-page": {
-    "introduction": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará(UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia com:",
+    "introduction": "Formação & Experiência",
     "paragraphs": [
       {
-        "paragraph": "Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's."
-      },
-      {
-        "paragraph": "1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL."
+        "paragraph": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará (UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia com:",
+        "subparagraphs": [
+          {
+            "paragraph": "Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's."
+          },
+          {
+            "paragraph": "1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL."
+          }
+        ]
       }
     ]
   },
