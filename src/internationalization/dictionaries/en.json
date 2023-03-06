@@ -11,6 +11,20 @@
     "position": "Software Developer | Front-end Mid Level",
     "introduction": ""
   },
+  "projects-page": {
+    "projects": {
+      "cards": {
+        "footer": {
+          "intern": "Intern",
+          "external": "External",
+          "code": "Code"
+        }
+      },
+      "jsexpert7": {
+        "description": "Javascript project using Tensorflow to detect gestures and interact with the browser"
+      }
+    }
+  },
   "about-page": {
     "introduction": "Degree & Experience:",
     "paragraphs": [

@@ -35,8 +35,8 @@ export default function Menu({
   const menuList = [
     { href: '', name: dictionary['server-component'].home },
     { href: '/about', name: dictionary['server-component'].about },
-    { href: '/experiences', name: dictionary['server-component'].experiences }
-    // { href: '/projects', name: dictionary['server-component'].projects },
+    { href: '/experiences', name: dictionary['server-component'].experiences },
+    { href: '/projects', name: dictionary['server-component'].projects }
     // { href: '/blog', name: 'Blog' }
   ];
 

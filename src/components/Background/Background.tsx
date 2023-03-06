@@ -7,8 +7,7 @@ const Background = () => {
     <div
       className={
         'fixed top-0 left-0  w-screen h-screen z-0 ' +
-        "bg-[url('/images/bg.jpg')] bg-cover bg-center grayscale" +
-        (theme === 'dark' ? '' : ' opacity-30')
+        "bg-[url('/images/bg.jpg')] bg-cover bg-center grayscale opacity-30"
       }
     />
   );

@@ -11,6 +11,20 @@
     "position": "Desenvolvedor de Software | Front-end Pleno",
     "introduction": ""
   },
+  "projects-page": {
+    "projects": {
+      "cards": {
+        "footer": {
+          "intern": "Interno",
+          "external": "Externo",
+          "code": "Código"
+        }
+      },
+      "jsexpert7": {
+        "description": "Projeto em Javascript utilizando Tensorflow para detectar gestos e interagir com o navegador"
+      }
+    }
+  },
   "about-page": {
     "introduction": "Formação & Experiência",
     "paragraphs": [

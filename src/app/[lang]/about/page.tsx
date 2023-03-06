@@ -1,6 +1,7 @@
 import { Locale } from '@/internationalization/i18n-config';
 import { getDictionary } from '@/internationalization/get-dictionary';
 
+// Icons
 import { BookOpenIcon } from '@heroicons/react/24/solid';
 
 const About = async ({ params: { lang } }: { params: { lang: Locale } }) => {

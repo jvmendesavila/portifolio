@@ -2,7 +2,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+
+// Headless UI
 import { Transition } from '@headlessui/react';
+
+// Icons
 import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 // Component

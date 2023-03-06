@@ -2,6 +2,7 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 
+// Icons
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
 
 export default function ThemeButton() {
