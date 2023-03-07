@@ -22,6 +22,9 @@
       },
       "jsexpert7": {
         "description": "Javascript project using Tensorflow to detect gestures and interact with the browser"
+      },
+      "dashboard": {
+        "description": "Dashboard de vendas utilizando animações"
       }
     }
   },

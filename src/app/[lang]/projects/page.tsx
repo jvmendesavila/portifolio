@@ -4,6 +4,7 @@ import { getDictionary } from '@/internationalization/get-dictionary';
 // Assets
 import ProjectCards from '@/components/pages/projects/projectCards';
 import JSExpert7Image from '@/assets/images/projects/jsexpert7/bg.png';
+import DashboardImage from '@/assets/images/projects/dashboard/bg.png';
 
 // Components
 
@@ -15,7 +16,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
   const { ['projects-page']: dictionary } = await getDictionary(lang);
   const projects = [
     {
-      live: false,
+      live: true,
       internal: false,
       image: JSExpert7Image,
       title: 'JS Expert 7.0',
@@ -23,6 +24,15 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
         'https://jvmendesavila.github.io/semana-javascript-expert07/project/pages/titles/',
       technologys: ['Tensorflow', 'Javascript', 'HTML', 'CSS'],
       dictionary: dictionary.projects.jsexpert7
+    },
+    {
+      live: true,
+      internal: true,
+      image: DashboardImage,
+      title: 'Dashboard de Vendas',
+      urProject: '/projects/dashboard',
+      technologys: ['Javascript', 'TailwindCSS', 'HTML'],
+      dictionary: dictionary.projects.dashboard
     }
   ];
   return (
