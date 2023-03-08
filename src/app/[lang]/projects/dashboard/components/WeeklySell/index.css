@@ -1,0 +1,105 @@
+.weekly-sell .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.weekly-sell .left {
+  gap: 3.2rem;
+  grid-auto-flow: column;
+}
+
+.weekly-sell .left,
+.weekly-sell .right {
+  flex: 1;
+}
+
+.left .grid {
+  gap: 0.8rem;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.left .grid span {
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.left .grid span::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+
+  display: block;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.left .most-sell span::before {
+  background: linear-gradient(180deg, #81FBB8 0%, #28C76F 100%);
+}
+
+.left .less-sell span::before {
+  background: linear-gradient(180deg, #EA5455 0%, #FEB692 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bars {
+  display: flex;
+  gap: calc(1.5vw + 0.5rem);
+  align-items: flex-end;
+  position: relative;
+}
+
+.bars::before {
+  content: '';
+  display: block;
+  height: 0.3rem;
+  width: 100%;
+  background-color: #4A4556;
+  border-radius: 999px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.bar-wrapper {
+  display: grid;
+  grid-template-rows: 15.9rem 1.6rem;
+  justify-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.bar {
+  width: 1.5rem;
+  background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  border-radius: 999px;
+
+  height: var(--height);
+  align-self: end;
+  animation: up 2s ease-in-out backwards;
+  animation-delay: 2s;
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .weekly-sell .wrapper {
+    flex-direction: row;
+  }
+
+  .weekly-sell .left {
+    grid-auto-flow: initial;
+  }
+
+  .bars {
+    gap: 3rem;
+  }
+}

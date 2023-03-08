@@ -18,6 +18,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
     {
       live: true,
       internal: false,
+      languages: ['pt'],
       image: JSExpert7Image,
       title: 'JS Expert 7.0',
       urProject:
@@ -28,6 +29,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
     {
       live: true,
       internal: true,
+      languages: ['pt', 'en'],
       image: DashboardImage,
       title: 'Dashboard de Vendas',
       urProject: '/projects/dashboard',

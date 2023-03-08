@@ -44,29 +44,43 @@ const ProjectCards = ({ dictionary, project }: PropTypes) => {
           </span>
         ))}
       </div>
-      <div className="flex flex-wrap justify-end gap-2 px-2 pt-2">
-        <div className="flex items-center">
-          <span
-            className={`h-2 w-2 rounded-full ${
-              project.live ? 'bg-red-700' : 'bg-gray-700'
-            }`}
-          />
-          <span className="px-1 text-xs text-green-500 rounded-full">
-            {project.live ? 'Live' : dictionary.projects.cards.footer.code}
-          </span>
+      <div className="flex p-2 justify-between item-center">
+        <div className="flex gap-2">
+          {project.languages.map((l) => (
+            <Image
+              alt=""
+              key={l}
+              width={'20'}
+              height={'20'}
+              src={`/images/languages/${l}-flag.png`}
+            />
+          ))}
         </div>
-        <div className="flex items-center">
-          {project.internal ? (
-            <ArrowDownTrayIcon className="w-3 h-3" />
-          ) : (
-            <ArrowUpTrayIcon className="w-3 h-3" />
-          )}
+        {/* Live & Type(Internal | External) */}
+        <div className="flex flex-wrap justify-end gap-2">
+          <div className="flex items-center">
+            <span
+              className={`h-2 w-2 rounded-full ${
+                project.live ? 'bg-red-700' : 'bg-gray-700'
+              }`}
+            />
+            <span className="px-1 text-xs text-green-500 rounded-full">
+              {project.live ? 'Live' : dictionary.projects.cards.footer.code}
+            </span>
+          </div>
+          <div className="flex items-center">
+            {project.internal ? (
+              <ArrowDownTrayIcon className="w-3 h-3" />
+            ) : (
+              <ArrowUpTrayIcon className="w-3 h-3" />
+            )}
 
-          <span className="px-1 text-xs text-green-500 rounded-full">
-            {project.internal
-              ? dictionary.projects.cards.footer.intern
-              : dictionary.projects.cards.footer.external}
-          </span>
+            <span className="px-1 text-xs text-green-500 rounded-full">
+              {project.internal
+                ? dictionary.projects.cards.footer.intern
+                : dictionary.projects.cards.footer.external}
+            </span>
+          </div>
         </div>
       </div>
     </div>

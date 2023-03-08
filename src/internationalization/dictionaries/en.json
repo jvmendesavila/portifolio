@@ -5,6 +5,17 @@
     "projects": "Projects",
     "experiences": "Experiences"
   },
+  "utils": {
+    "weekdaysDaysResume": {
+      "Monday": "Monday",
+      "Tuesday": "Tuesday",
+      "Wednesday": "Wednesday",
+      "Thursday": "Thursday",
+      "Friday": "Friday",
+      "Saturday": "Saturday",
+      "Sunday": "Sunday"
+    }
+  },
   "home-page": {
     "hi": "Hi!",
     "me": "I'm Victor Mendes Ávila",
@@ -24,6 +35,22 @@
         "description": "Javascript project using Tensorflow to detect gestures and interact with the browser"
       },
       "dashboard": {
+        "nps": {
+          "title": "NPS general",
+          "result": "Excellent"
+        },
+        "circle": {
+          "title": "Closed sales",
+          "reached": "reached",
+          "expected": "Expected"
+        },
+        "sales": {
+          "title": "Sales by day of the week",
+          "moreSales": "Day with more sales",
+          "moreSalesDay": "wednesday",
+          "lessSales": "Day with less sales",
+          "lessSalesDay": "sunday"
+        },
         "description": "Dashboard de vendas utilizando animações"
       }
     }
