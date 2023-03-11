@@ -34,6 +34,7 @@ ChartJS.register({
       let x = chart.tooltip._active[0].element.x;
       let y = chart.scales.y;
       let ctx = chart.ctx;
+      console.log(chart);
       ctx.save();
       ctx.beginPath();
       ctx.setLineDash([5, 5]);
@@ -92,7 +93,6 @@ export const options = {
       padding: 8,
       caretSize: 0,
       caretPadding: 16,
-      xAlign: 'center',
       yAlign: 'bottom',
 
       titleFont: {
@@ -150,6 +150,7 @@ export const data = {
 };
 
 const ExchangeChart = () => {
+  // @ts-ignore: Unreachable code error
   return <Line options={options} data={data} />;
 };
 

@@ -195,7 +195,7 @@ const Exchange = ({ params: { lang } }: PropTypes) => {
 
                     <ul>
                       {coins.map((s) => (
-                        <li onClick={selectInitialCoin(s)}>
+                        <li key={s.label} onClick={selectInitialCoin(s)}>
                           <span className={`fi ${s.icon} fis`} />
                           {s.label}
                         </li>
@@ -233,7 +233,7 @@ const Exchange = ({ params: { lang } }: PropTypes) => {
 
                     <ul>
                       {coins.map((sF) => (
-                        <li onClick={selectFinalCoin(sF)}>
+                        <li key={sF.label} onClick={selectFinalCoin(sF)}>
                           <span className={`fi ${sF.icon} fis`} />
                           {sF.label}
                         </li>
