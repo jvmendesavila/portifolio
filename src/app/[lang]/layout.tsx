@@ -17,7 +17,12 @@ export default async function RootLayout({ params: { lang }, children }: any) {
   const dictionary = await getDictionary(lang);
   return (
     <html lang={lang}>
-      <head />
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+        />
+      </head>
       <body>
         <ThemeProviderComponent>
           <div className="flex">

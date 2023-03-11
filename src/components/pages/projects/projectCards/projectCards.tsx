@@ -15,7 +15,7 @@ interface PropTypes {
 const ProjectCards = ({ dictionary, project }: PropTypes) => {
   return (
     <div
-      onClick={() => window.open(project.urProject)}
+      onClick={() => window.open(project.urlProject)}
       className={
         'w-64 pb-2 rounded-md border-4 border-indigo-500 ' +
         'justify-self-center bg-black text-white cursor-pointer'

@@ -4,7 +4,7 @@ export interface ProjectType {
   languages: string[];
   image: StaticImageData;
   title: string;
-  urProject: string;
+  urlProject: string;
   technologys: string[];
   dictionary: {
     description: string;

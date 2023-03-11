@@ -5,6 +5,7 @@ import { getDictionary } from '@/internationalization/get-dictionary';
 import ProjectCards from '@/components/pages/projects/projectCards';
 import JSExpert7Image from '@/assets/images/projects/jsexpert7/bg.png';
 import DashboardImage from '@/assets/images/projects/dashboard/bg.png';
+import ExchangeImage from '@/assets/images/projects/exchange/bg.png';
 
 // Components
 
@@ -21,7 +22,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       languages: ['pt'],
       image: JSExpert7Image,
       title: 'JS Expert 7.0',
-      urProject:
+      urlProject:
         'https://jvmendesavila.github.io/semana-javascript-expert07/project/pages/titles/',
       technologys: ['Tensorflow', 'Javascript', 'HTML', 'CSS'],
       dictionary: dictionary.projects.jsexpert7
@@ -32,9 +33,25 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       languages: ['pt', 'en'],
       image: DashboardImage,
       title: 'Dashboard de Vendas',
-      urProject: '/projects/dashboard',
+      urlProject: '/projects/dashboard',
       technologys: ['Javascript', 'TailwindCSS', 'HTML'],
       dictionary: dictionary.projects.dashboard
+    },
+    {
+      live: true,
+      internal: true,
+      languages: ['pt'],
+      image: ExchangeImage,
+      title: 'Conversor de Moedas & Taxa de Cambio',
+      urlProject: '/projects/exchange',
+      technologys: [
+        'React Chart 2',
+        'TailwindCSS',
+        'Javascript',
+        'HTML',
+        'CSS'
+      ],
+      dictionary: dictionary.projects.exchange
     }
   ];
   return (

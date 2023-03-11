@@ -22,7 +22,7 @@ const Dashboard = async ({ params: { lang } }: PropTypes) => {
   const dictionaryD = dictionary['projects-page'].projects.dashboard;
   return (
     <>
-      <div className="app grid w-fit h-fit min-h-full inter">
+      <div className="app grid w-fit h-fit min-h-full font-inter">
         {/* NPS */}
         <div className="box grid gap-[1.5rem]">
           <div className="top text-center">{dictionaryD.nps.title}</div>
@@ -33,10 +33,11 @@ const Dashboard = async ({ params: { lang } }: PropTypes) => {
             }
           >
             <Image
+              alt="smile"
               src={SmileImage}
               className="h-14 w-14 rounded-full"
-              alt="Victor Mendes Avila"
             />
+
             {dictionaryD.nps.result}
           </div>
           <div className="bottom gap-[1rem]">
