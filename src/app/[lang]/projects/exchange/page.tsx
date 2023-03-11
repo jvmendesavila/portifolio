@@ -181,7 +181,7 @@ const Exchange = ({ params: { lang } }: PropTypes) => {
                     onChange={(e) => setInput(e.target.value)}
                     className="amount bg-white"
                   />
-                  <div className="dropdown">
+                  <div className="dropdown z-10">
                     <div className="selected">
                       <span className={`fi ${initialCoin.icon} fis`} />
                       {initialCoin.label}
