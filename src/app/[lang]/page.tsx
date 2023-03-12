@@ -3,25 +3,19 @@ import HandGif from '@/assets/images/hand.gif';
 import { Locale } from '@/internationalization/i18n-config';
 import { getDictionary } from '@/internationalization/get-dictionary';
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'Olá! 👋 Eu sou João Victor Mendes Ávila e esse é meu potifólio ',
-  description: 'Desenvolvedor de Software | Front-end Pleno'
-};
-
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { ['home-page']: dictionary } = await getDictionary(lang);
   return (
     <>
-      {/* Add JSON-LD to your page */}
-      <section>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <>
+        <title>Olá! 👋 Esse é meu potifólio</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta
+          name="description"
+          content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
         />
-        {/* ... */}
-      </section>
+        <link rel="icon" href="/favicon.ico" />
+      </>
 
       <div
         className={'pb-12  h-[calc(100vh-8rem)] flex flex-col justify-center'}
