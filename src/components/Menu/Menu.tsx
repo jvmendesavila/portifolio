@@ -41,7 +41,7 @@ export default function Menu({
   ];
 
   return (
-    <div className="flex-col w-full">
+    <div className="flex-col w-full dark">
       {/* Tabs */}
       {menuList.map(({ href, name }) => (
         <div key={href} className="font-bold py-4 text-center">

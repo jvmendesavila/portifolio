@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
@@ -23,8 +23,13 @@ import { dictionaryType } from '@/types/dictionaryType';
 
 const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
   const [width] = useWindow();
-  const { theme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [isShowing, setIsShowing] = React.useState(false);
+
+  React.useEffect(() => {
+    setTheme('dark');
+  }, []);
+
   return (
     <div className="relative z-20">
       {isShowing ? (

@@ -13,6 +13,12 @@ interface PropTypes {
   params: { lang: Locale };
 }
 
+export async function generateMetadata() {
+  return {
+    title: 'Projects'
+  };
+}
+
 const Experiences = async ({ params: { lang } }: PropTypes) => {
   const { ['projects-page']: dictionary } = await getDictionary(lang);
   const projects = [

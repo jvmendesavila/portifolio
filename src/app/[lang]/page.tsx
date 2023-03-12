@@ -3,6 +3,12 @@ import HandGif from '@/assets/images/hand.gif';
 import { Locale } from '@/internationalization/i18n-config';
 import { getDictionary } from '@/internationalization/get-dictionary';
 
+export async function generateMetadata() {
+  return {
+    title: 'Home'
+  };
+}
+
 const Home = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { ['home-page']: dictionary } = await getDictionary(lang);
   return (

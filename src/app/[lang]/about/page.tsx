@@ -4,6 +4,12 @@ import { getDictionary } from '@/internationalization/get-dictionary';
 // Icons
 import { BookOpenIcon } from '@heroicons/react/24/solid';
 
+export async function generateMetadata() {
+  return {
+    title: 'About'
+  };
+}
+
 const About = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   const { ['about-page']: dictionary } = await getDictionary(lang);
   return (

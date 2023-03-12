@@ -17,6 +17,12 @@ interface PropTypes {
   params: { lang: Locale };
 }
 
+export async function generateMetadata() {
+  return {
+    title: 'Dashboard'
+  };
+}
+
 const Dashboard = async ({ params: { lang } }: PropTypes) => {
   const dictionary = await getDictionary(lang);
   const dictionaryD = dictionary['projects-page'].projects.dashboard;
