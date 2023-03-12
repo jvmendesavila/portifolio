@@ -7,7 +7,16 @@ export default function Head() {
         name="description"
         content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
       />
-      <link rel="image" href="/images/meta-index.png" />
+      <link rel="image" href="/images/pages/meta-index.png" />
+
+      {/* OG */}
+
+      <meta property="og:title" content="Olá! 👋 Bem vindo ao meu potifólio" />
+      <meta
+        property="og:description"
+        content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
+      />
+      <meta property="og:image" content="/images/pages/meta-index.png" />
     </>
   );
 }
