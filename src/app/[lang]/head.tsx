@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Olá! 👋 Bem vindo ao meu potifólio</title>
+      <title>Olá! Bem vindo ao meu potifólio</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
@@ -13,7 +13,7 @@ export default function Head() {
       />
 
       {/* OG */}
-      <meta property="og:title" content="Olá! 👋 Bem vindo ao meu potifólio" />
+      <meta property="og:title" content="Olá! Bem vindo ao meu potifólio" />
       <meta
         property="og:description"
         content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
