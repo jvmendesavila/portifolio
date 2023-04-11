@@ -1,0 +1,23 @@
+.body {
+  color: #0f1419;
+  -webkit-font-smoothing: antialised;
+}
+
+.app {
+  --twitter-blue: #1da1f2;
+}
+
+.layout {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: calc(100vh - 8rem);
+
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+@media (max-width: 780px) {
+  .layout {
+    grid-template-columns: 80px 1fr;
+  }
+}

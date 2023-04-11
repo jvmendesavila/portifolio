@@ -30,7 +30,17 @@ const ProjectCards = ({ dictionary, project }: PropTypes) => {
       />
 
       {/* Title & Description */}
-      <p className="relative font-bold text-lg text-indigo-500 px-2 pt-2 -mt-8 bg-gradient-to-t from-black via-black">
+      <p
+        className="
+        text-lg
+        relative
+        font-bold
+        text-indigo-500
+        px-2 pt-4 -mt-8
+        min-h-[72px]
+        bg-gradient-to-t from-black via-black
+      "
+      >
         {project.title}
       </p>
       <div className="h-24 p-2 ">{project.dictionary.description}</div>

@@ -31,11 +31,14 @@
           "code": "Code"
         }
       },
+      "ui-twitter": {
+        "description": "ReactJS project creating twitter interface and tweet coments window"
+      },
       "exchange": {
-        "description": "Javascript project using react-chart-2 to create an exchange chart"
+        "description": "ReactJS project using react-chart-2 to create an exchange chart"
       },
       "jsexpert7": {
-        "description": "Javascript project using Tensorflow to detect gestures and interact with the browser"
+        "description": "ReactJS project using Tensorflow to detect gestures and interact with the browser"
       },
       "dashboard": {
         "nps": {

@@ -31,11 +31,14 @@
           "code": "Código"
         }
       },
+      "ui-twitter": {
+        "description": "Projeto em ReactJS criando interface do twitter e página de comentários de um tweet"
+      },
       "exchange": {
-        "description": "Projeto em Javascript utilizando react-chart-2 para gerar gráfico de câmbio"
+        "description": "Projeto em ReactJS utilizando react-chart-2 para gerar gráfico de câmbio"
       },
       "jsexpert7": {
-        "description": "Projeto em Javascript utilizando Tensorflow para detectar gestos e interagir com o navegador"
+        "description": "Projeto em ReactJS utilizando Tensorflow para detectar gestos e interagir com o navegador"
       },
       "dashboard": {
         "nps": {
