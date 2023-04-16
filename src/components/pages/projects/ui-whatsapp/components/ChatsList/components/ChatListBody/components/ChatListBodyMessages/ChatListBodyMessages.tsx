@@ -86,7 +86,7 @@ const ChatListBodyMessages = (props: any) => {
       active: true,
       label: 'Apagar conversa',
       action: (chatId: number) =>
-        setChats(chats.filter((chat) => chat.id !== chatId))
+        props.setChats(props.chats.filter((chat: any) => chat.id !== chatId))
     },
 
     // Pin
