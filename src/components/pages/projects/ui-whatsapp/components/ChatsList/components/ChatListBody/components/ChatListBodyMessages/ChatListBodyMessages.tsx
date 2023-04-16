@@ -55,7 +55,7 @@ const ChatListBodyMessages = (props: any) => {
 
   const handleOptions = (chatId: number, option: 'pin' | 'muted') => {
     props.setChats(
-      props.chats.map((c) =>
+      props.chats.map((c: any) =>
         c.id === chatId ? { ...c, [option]: !c[option] } : c
       )
     );
