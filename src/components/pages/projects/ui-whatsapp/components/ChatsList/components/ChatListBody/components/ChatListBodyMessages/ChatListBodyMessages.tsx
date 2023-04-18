@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 // Assets
@@ -9,37 +9,7 @@ import PinIcon from '@/assets/images/projects/ui-whatsapp/pin.svg';
 import ArrowDownIcon from '@/assets/images/projects/ui-whatsapp/arrow-down.png';
 
 // Components
-import UIWhatsappMenu from '../../../../../UIWhatsappMenu';
-
-const initialChats = [
-  {
-    id: 1,
-    unredMessages: {
-      active: true,
-      quantity: 2
-    },
-    muted: true,
-    pin: true
-  },
-  {
-    id: 2,
-    unredMessages: {
-      active: false,
-      quantity: 0
-    },
-    pin: true,
-    muted: false
-  },
-  {
-    id: 3,
-    unredMessages: {
-      active: false,
-      quantity: 0
-    },
-    pin: false,
-    muted: true
-  }
-];
+import MenuComponent from './Menu';
 
 const ChatListBodyMessages = (props: any) => {
   // Functions
@@ -124,7 +94,7 @@ const ChatListBodyMessages = (props: any) => {
           />
           <div
             className={
-              'relative group h-[72px] grid grid-cols-[78px_1fr] hover:bg-[#202c33] cursor-pointer'
+              'group h-[72px] grid grid-cols-[78px_1fr] hover:bg-[#202c33] cursor-pointer'
             }
           >
             {/* Avatar */}
@@ -180,8 +150,7 @@ const ChatListBodyMessages = (props: any) => {
                   )}
                 </div>
                 <div className="flex items-center">
-                  <UIWhatsappMenu
-                    fixed={true}
+                  <MenuComponent
                     chatId={chat.id}
                     options={options(chat).filter((op) => op.active)}
                   >
@@ -199,7 +168,7 @@ const ChatListBodyMessages = (props: any) => {
                           group-hover:opacity-100
                         "
                     />
-                  </UIWhatsappMenu>
+                  </MenuComponent>
                 </div>
               </div>
             </div>

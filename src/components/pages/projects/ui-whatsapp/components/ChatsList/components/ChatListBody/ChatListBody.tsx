@@ -40,6 +40,70 @@ const initialChats = [
       active: false,
       quantity: 0
     }
+  },
+  {
+    id: 4,
+    pin: true,
+    muted: true,
+    lastMessage: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    unredMessages: {
+      active: true,
+      quantity: 2
+    }
+  },
+  {
+    id: 5,
+    pin: true,
+    muted: false,
+    lastMessage:
+      'Placeat sapiente quaerat eaque atque, neque ab aspernatur harum voluptatum facilis.',
+    unredMessages: {
+      active: false,
+      quantity: 0
+    }
+  },
+  {
+    id: 6,
+    pin: false,
+    muted: true,
+    lastMessage:
+      'Totam iste velit temporibus magnam, earum blanditiis odio rem minima esse.',
+    unredMessages: {
+      active: false,
+      quantity: 0
+    }
+  },
+  {
+    id: 7,
+    pin: true,
+    muted: true,
+    lastMessage: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    unredMessages: {
+      active: true,
+      quantity: 2
+    }
+  },
+  {
+    id: 8,
+    pin: true,
+    muted: false,
+    lastMessage:
+      'Placeat sapiente quaerat eaque atque, neque ab aspernatur harum voluptatum facilis.',
+    unredMessages: {
+      active: false,
+      quantity: 0
+    }
+  },
+  {
+    id: 9,
+    pin: false,
+    muted: true,
+    lastMessage:
+      'Totam iste velit temporibus magnam, earum blanditiis odio rem minima esse.',
+    unredMessages: {
+      active: false,
+      quantity: 0
+    }
   }
 ];
 
