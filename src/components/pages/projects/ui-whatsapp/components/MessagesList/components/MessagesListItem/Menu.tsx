@@ -17,14 +17,14 @@ export default function MenuComponent(props: any) {
   };
 
   return (
-    <div id={`message-${props.chatId}`} className="flex">
+    <div id={`${props.messageId}`} className="flex">
       <Menu as="div" className="inline-block text-left">
         <div className="flex items-center">
           <Menu.Button
             onClick={() =>
               handleClick(
                 document
-                  .getElementById(`message-${props.chatId}`)
+                  .getElementById(`${props.messageId}`)
                   ?.getBoundingClientRect().y
               )
             }
@@ -43,7 +43,7 @@ export default function MenuComponent(props: any) {
               <Menu.Item key={i}>
                 {({ active }) => (
                   <button
-                    onClick={() => op.action(props.chatId)}
+                    onClick={() => op.action(props.messageId)}
                     className={`${
                       active ? 'bg-[#182229] text-white' : 'text-[#d1d7db]'
                     } flex w-full h-[40px] px-[24px] text-[14px] items-center`}
