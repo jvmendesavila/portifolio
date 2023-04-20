@@ -207,33 +207,33 @@ const MessagesListItem = () => {
       `}
     >
       {gorupMessages.map((groupM) => (
-        <div className="group relative" key={groupM.id}>
+        <div className="relative mt-[49px]" key={groupM.id}>
           {/* Date legend */}
           <div
             className={`
             flex
-            sticky
-            top-0
-            justify-center
             z-10
+            top-[32px]
+            sticky
+            justify-center
             transition
             ease-in-out
-            duration-[500ms]
+            duration-[1000ms]
             opacity-0
             ${scrolling ? 'opacity-100' : 'opacity-0'}
             -translate-y-full
             ${scrolling ? '-translate-y-0' : '-translate-y-full'}
             `}
           >
-            <div className=" p-2 bg-[#111b21] p-1 rounded-md cursor-pointer">
+            <div className="bg-[#111b21] px-[12px] py-[6px] rounded-md cursor-pointer">
               <span className="text-[#8696A0] text-[13px]">
                 {groupM.legend}
               </span>
             </div>
           </div>
 
-          <div className="flex justify-center -mt-[37px]">
-            <div className=" p-2 bg-[#111b21] p-1 rounded-md cursor-pointer">
+          <div className="flex justify-center -mt-[66px] mb-[12px]">
+            <div className="bg-[#111b21] px-[12px] py-[6px] rounded-md cursor-pointer">
               <span className="text-[#8696A0] text-[13px]">
                 {groupM.legend}
               </span>
@@ -351,7 +351,7 @@ const MessagesListItem = () => {
             transition
             ease-in-out
             duration-[300ms]
-            scale-50
+            scale-100
             ${scrollBottom ? 'scale-50 ' : 'scale-100'}
           `}
         >

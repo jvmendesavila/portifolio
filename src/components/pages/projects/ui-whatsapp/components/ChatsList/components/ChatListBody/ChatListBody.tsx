@@ -3,6 +3,14 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 // Assets
+import AvatarImage from '@/assets/images/avatar.png';
+import AvatarImage1 from '@/assets/images/projects/ui-whatsapp/new-image.jpg';
+import AvatarImage2 from '@/assets/images/projects/ui-whatsapp/new-image-2.jpg';
+import AvatarImage3 from '@/assets/images/projects/ui-whatsapp/new-image-3.jpg';
+import AvatarImage4 from '@/assets/images/projects/ui-whatsapp/new-image-4.jpg';
+import AvatarImage5 from '@/assets/images/projects/ui-whatsapp/new-image-5.jpg';
+import AvatarImage6 from '@/assets/images/projects/ui-whatsapp/new-image-6.jpg';
+import AvatarImage7 from '@/assets/images/projects/ui-whatsapp/new-image-7.jpg';
 import SearchIcon from '@/assets/images/projects/ui-whatsapp/search.svg';
 import FilterIcon from '@/assets/images/projects/ui-whatsapp/filter.svg';
 import FilterWhiteIcon from '@/assets/images/projects/ui-whatsapp/filter-white.svg';
@@ -11,6 +19,11 @@ import ChatListBodyMessages from './components/ChatListBodyMessages';
 const initialChats = [
   {
     id: 1,
+    avatar: {
+      image: AvatarImage1,
+      name: 'Helen'
+    },
+    avatarImage: AvatarImage1,
     pin: true,
     muted: true,
     lastMessage: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -21,6 +34,11 @@ const initialChats = [
   },
   {
     id: 2,
+    avatar: {
+      image: AvatarImage2,
+      name: 'Ricardo'
+    },
+    avatarImage: AvatarImage2,
     pin: true,
     muted: false,
     lastMessage:
@@ -32,6 +50,11 @@ const initialChats = [
   },
   {
     id: 3,
+    avatar: {
+      image: AvatarImage3,
+      name: 'Pedro'
+    },
+    avatarImage: AvatarImage3,
     pin: false,
     muted: true,
     lastMessage:
@@ -43,6 +66,11 @@ const initialChats = [
   },
   {
     id: 4,
+    avatar: {
+      image: AvatarImage4,
+      name: 'Thomas'
+    },
+    avatarImage: AvatarImage4,
     pin: true,
     muted: true,
     lastMessage: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -53,6 +81,11 @@ const initialChats = [
   },
   {
     id: 5,
+    avatar: {
+      image: AvatarImage5,
+      name: 'Lucas'
+    },
+    avatarImage: AvatarImage5,
     pin: true,
     muted: false,
     lastMessage:
@@ -64,6 +97,11 @@ const initialChats = [
   },
   {
     id: 6,
+    avatar: {
+      image: AvatarImage6,
+      name: 'João Paulo'
+    },
+    avatarImage: AvatarImage6,
     pin: false,
     muted: true,
     lastMessage:
@@ -75,34 +113,17 @@ const initialChats = [
   },
   {
     id: 7,
+    avatar: {
+      image: AvatarImage7,
+      name: 'Jaros Farias'
+    },
+    avatarImage: AvatarImage7,
     pin: true,
     muted: true,
     lastMessage: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     unredMessages: {
       active: true,
       quantity: 2
-    }
-  },
-  {
-    id: 8,
-    pin: true,
-    muted: false,
-    lastMessage:
-      'Placeat sapiente quaerat eaque atque, neque ab aspernatur harum voluptatum facilis.',
-    unredMessages: {
-      active: false,
-      quantity: 0
-    }
-  },
-  {
-    id: 9,
-    pin: false,
-    muted: true,
-    lastMessage:
-      'Totam iste velit temporibus magnam, earum blanditiis odio rem minima esse.',
-    unredMessages: {
-      active: false,
-      quantity: 0
     }
   }
 ];
@@ -170,6 +191,8 @@ const ChatListBody = () => {
           />
         </div>
       </div>
+
+      {/* Chat List */}
       <ChatListBodyMessages chats={chats} setChats={setChats} />
     </div>
   );

@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 // Assets
 import AvatarImage from '@/assets/images/avatar.png';
+import PadlockIcon from '@/assets/images/projects/ui-whatsapp/padlock.svg';
 import MuteIcon from '@/assets/images/projects/ui-whatsapp/mute.svg';
 import PinIcon from '@/assets/images/projects/ui-whatsapp/pin.svg';
 import ArrowDownIcon from '@/assets/images/projects/ui-whatsapp/arrow-down.png';
@@ -100,7 +101,7 @@ const ChatListBodyMessages = (props: any) => {
             {/* Avatar */}
             <div className="h-full flex justify-center items-center">
               <Image
-                src={AvatarImage}
+                src={chat.avatar.image}
                 placeholder="blur"
                 className="h-[50px] w-[50px] rounded-full"
                 alt="Victor Mendes Avila"
@@ -109,7 +110,7 @@ const ChatListBodyMessages = (props: any) => {
 
             {/* Last Message */}
             <div className="h-full flex flex-col justify-center">
-              <span className="text-[18px]">Victor Mendes Ávila</span>
+              <span className="text-[18px]">{chat.avatar.name}</span>
               <div className="grid grid-cols-[1fr_80px_30px] pr-[8px]">
                 <span className="text-[12px] text-[#8696A0] whitespace-nowrap	overflow-hidden text-ellipsis">
                   {chat.lastMessage}
@@ -175,6 +176,27 @@ const ChatListBodyMessages = (props: any) => {
           </div>
         </div>
       ))}
+      <div className="mx-[14px]">
+        <div className={`h-[1px] bg-[#202c33]`} />
+        <div className="flex h-[60px] items-center">
+          <div className="flex text-center">
+            <div className="text-[12px]">
+              <span className="inline-block -mb-[2px] mr-[6px]">
+                <Image
+                  alt=""
+                  title=""
+                  src={PadlockIcon}
+                  className="w-[13px] rounded-full"
+                />
+              </span>
+              Suas menssagens pessoais são protegidas com a{' '}
+              <span className="cursor-pointer text-[#53BDEB]">
+                criptografia de ponta a ponta
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
