@@ -1,3 +1,3 @@
-import MessagesList from './MessagesList';
+import MessagesListContent from './MessagesListContent';
 
-export default MessagesList;
+export default MessagesListContent;

@@ -1,4 +1,5 @@
 'use client';
+import './index.css';
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 
@@ -204,6 +205,7 @@ const MessagesListItem = () => {
         max-h-[calc(100vh-8rem-122px)]
         overflow-auto
         text-white text-[14px]
+        scroll-message-list
       `}
     >
       {gorupMessages.map((groupM) => (

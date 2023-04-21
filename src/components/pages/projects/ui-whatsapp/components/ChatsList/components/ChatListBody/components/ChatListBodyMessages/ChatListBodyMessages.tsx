@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import './index.css';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 
 // Assets
@@ -12,7 +13,13 @@ import ArrowDownIcon from '@/assets/images/projects/ui-whatsapp/arrow-down.png';
 // Components
 import MenuComponent from './Menu';
 
+// Contexts
+import MainContext from '@/components/pages/projects/ui-whatsapp/contexts/MainContext';
+
 const ChatListBodyMessages = (props: any) => {
+  // Contexts
+  const { setChat } = useContext(MainContext);
+
   // Functions
   const handleUnreadChat = (chatId: number, active: boolean) => {
     props.setChats(
@@ -86,10 +93,10 @@ const ChatListBodyMessages = (props: any) => {
   ];
 
   return (
-    <div className="overflow-y-auto overflow-x-hidden max-h-[calc(100vh-8rem-106px)]">
+    <div className="overflow-y-auto overflow-x-hidden max-h-[calc(100vh-8rem-106px)] scroll-message-list">
       {/* Chat List */}
       {props.chats.map((chat: any, i: number) => (
-        <div key={i}>
+        <div key={i} onClick={() => setChat(chat)}>
           <div
             className={`${i === 0 ? 'h-0' : 'h-[1px]'} bg-[#202c33] ml-16`}
           />

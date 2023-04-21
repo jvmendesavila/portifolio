@@ -7,6 +7,7 @@ import JSExpert7Image from '@/assets/images/projects/jsexpert7/bg.png';
 import DashboardImage from '@/assets/images/projects/dashboard/bg.png';
 import ExchangeImage from '@/assets/images/projects/exchange/bg.png';
 import UITwitterImage from '@/assets/images/projects/ui-twitter/ui-twitter.png';
+import UIWhatsappImage from '@/assets/images/projects/ui-whatsapp/ui-whatsapp.png';
 
 // Components
 
@@ -63,6 +64,16 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       urlProject: '/projects/ui-twitter',
       technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
       dictionary: dictionary.projects['ui-twitter']
+    },
+    {
+      live: true,
+      internal: true,
+      languages: ['pt'],
+      image: UIWhatsappImage,
+      title: 'UI Whatsapp Web',
+      urlProject: '/projects/ui-whatsapp',
+      technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      dictionary: dictionary.projects['ui-whatsapp']
     }
   ];
   return (

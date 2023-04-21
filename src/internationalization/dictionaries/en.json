@@ -34,6 +34,9 @@
       "ui-twitter": {
         "description": "ReactJS project creating twitter interface and tweet coments window"
       },
+      "ui-whatsapp": {
+        "description": "ReactJS project using TailwindCSS to create main web whatsapp interface"
+      },
       "exchange": {
         "description": "ReactJS project using react-chart-2 to create an exchange chart"
       },

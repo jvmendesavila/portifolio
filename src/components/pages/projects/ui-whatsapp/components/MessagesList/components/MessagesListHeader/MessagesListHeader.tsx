@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 
+import { ArrowLeft } from 'phosphor-react';
 // Assets
-import AvatarImage from '@/assets/images/avatar.png';
 import OptionsIcon from '@/assets/images/projects/ui-whatsapp/options.svg';
 import SearchIcon from '@/assets/images/projects/ui-whatsapp/search.svg';
 
 // Components
 import UIWhatsappMenu from '../../../UIWhatsappMenu';
+
+// Contexts
+import MainContext from '../../../../contexts/MainContext';
 
 const options = [
   { label: 'Dados do contato' },
@@ -22,18 +25,27 @@ const options = [
 ];
 
 const MessagesListHeader = () => {
+  // Contexts
+  const { chat, setChat } = useContext(MainContext);
+
   return (
-    <div className="bg-[#202c33] py-[10px] px-[16px]">
-      <div className="grid grid-cols-[60px_1fr_90px] items-center">
+    <div className="flex items-center bg-[#202c33] py-[10px] px-[16px]">
+      <ArrowLeft
+        size={18}
+        onClick={() => setChat(null)}
+        className="mr-[8px] min-[641px]:hidden"
+      />
+      <div className="w-full grid grid-cols-[48px_1fr_90px] items-center">
         <Image
-          src={AvatarImage}
+          src={chat.avatar.image}
           placeholder="blur"
-          className="h-[40px] w-[40px] rounded-full"
+          className="h-[40px] w-[40px] rounded-full mr-[8px]"
           alt="Victor Mendes Avila"
         />
+
         <div className="flex flex-col">
-          <span>Victor Mendes Ávila</span>
-          <span className="text-[12px] text-[#8696A0]">
+          <span>{chat.avatar.name}</span>
+          <span className="max-[360px]:max-w-[100px] text-[12px] text-[#8696A0] whitespace-nowrap	overflow-hidden text-ellipsis">
             visto por último hoje às 17:32
           </span>
         </div>
