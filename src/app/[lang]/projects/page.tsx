@@ -6,6 +6,8 @@ import ProjectCards from '@/components/pages/projects/projectCards';
 import JSExpert7Image from '@/assets/images/projects/jsexpert7/bg.png';
 import DashboardImage from '@/assets/images/projects/dashboard/bg.png';
 import ExchangeImage from '@/assets/images/projects/exchange/bg.png';
+import UITwitterImage from '@/assets/images/projects/ui-twitter/ui-twitter.png';
+import UIWhatsappImage from '@/assets/images/projects/ui-whatsapp/ui-whatsapp.png';
 
 // Components
 
@@ -40,7 +42,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: DashboardImage,
       title: 'Dashboard de Vendas',
       urlProject: '/projects/dashboard',
-      technologys: ['Javascript', 'TailwindCSS', 'HTML'],
+      technologys: ['ReactJS', 'TailwindCSS', 'HTML'],
       dictionary: dictionary.projects.dashboard
     },
     {
@@ -50,14 +52,28 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: ExchangeImage,
       title: 'Conversor de Moedas & Taxa de Cambio',
       urlProject: '/projects/exchange',
-      technologys: [
-        'React Chart 2',
-        'TailwindCSS',
-        'Javascript',
-        'HTML',
-        'CSS'
-      ],
+      technologys: ['React Chart 2', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
       dictionary: dictionary.projects.exchange
+    },
+    {
+      live: true,
+      internal: true,
+      languages: ['pt'],
+      image: UITwitterImage,
+      title: 'UI Twitter',
+      urlProject: '/projects/ui-twitter',
+      technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      dictionary: dictionary.projects['ui-twitter']
+    },
+    {
+      live: true,
+      internal: true,
+      languages: ['pt'],
+      image: UIWhatsappImage,
+      title: 'UI Whatsapp Web',
+      urlProject: '/projects/ui-whatsapp',
+      technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      dictionary: dictionary.projects['ui-whatsapp']
     }
   ];
   return (
