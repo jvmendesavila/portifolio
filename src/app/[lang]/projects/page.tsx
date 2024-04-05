@@ -29,10 +29,10 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       internal: false,
       languages: ['pt'],
       image: JSExpert7Image,
-      title: 'JS Expert 7.0',
+      title: 'Gesture Controller - JS Expert 7.0',
       urlProject:
-        'https://jvmendesavila.github.io/semana-javascript-expert07/project/pages/titles/',
-      technologys: ['Tensorflow', 'Javascript', 'HTML', 'CSS'],
+        'https://jvmendesavila.github.io/gesture-controller/project/pages/titles/',
+      technologys: ['Node.js', 'Tensorflow'],
       dictionary: dictionary.projects.jsexpert7
     },
     {
@@ -42,7 +42,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: DashboardImage,
       title: 'Dashboard de Vendas',
       urlProject: '/projects/dashboard',
-      technologys: ['ReactJS', 'TailwindCSS', 'HTML'],
+      technologys: ['React.js', 'TailwindCSS', 'HTML', 'CSS'],
       dictionary: dictionary.projects.dashboard
     },
     {
@@ -52,7 +52,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: ExchangeImage,
       title: 'Conversor de Moedas & Taxa de Cambio',
       urlProject: '/projects/exchange',
-      technologys: ['React Chart 2', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      technologys: ['React.js', 'React Chart 2', 'TailwindCSS', 'HTML', 'CSS'],
       dictionary: dictionary.projects.exchange
     },
     {
@@ -62,7 +62,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: UITwitterImage,
       title: 'UI Twitter',
       urlProject: '/projects/ui-twitter',
-      technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      technologys: ['React.js', 'TailwindCSS', 'HTML', 'CSS'],
       dictionary: dictionary.projects['ui-twitter']
     },
     {
@@ -72,7 +72,7 @@ const Experiences = async ({ params: { lang } }: PropTypes) => {
       image: UIWhatsappImage,
       title: 'UI Whatsapp Web',
       urlProject: '/projects/ui-whatsapp',
-      technologys: ['ReactJS', 'TailwindCSS', 'ReactJS', 'HTML', 'CSS'],
+      technologys: ['React.js', 'TailwindCSS', 'HTML', 'CSS'],
       dictionary: dictionary.projects['ui-whatsapp']
     }
   ];
