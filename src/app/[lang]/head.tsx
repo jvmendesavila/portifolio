@@ -4,7 +4,7 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
-        content="Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
+        content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
       />
       <link
         rel="image"
@@ -15,7 +15,7 @@ export default function Head() {
       <meta property="og:title" content="Olá! Bem vindo ao meu potifólio" />
       <meta
         property="og:description"
-        content="Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
+        content="João Victor Mendes Ávila | Desenvolvedor de Software | Front-end Pleno"
       />
       <meta
         property="og:image"

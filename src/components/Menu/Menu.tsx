@@ -33,36 +33,37 @@ export default function Menu({
   const lang = currentRoute?.split('/')[1];
 
   const menuList = [
-    { href: '', name: dictionary['server-component'].home },
-    { href: '/about', name: dictionary['server-component'].about },
-    { href: '/experiences', name: dictionary['server-component'].experiences },
-    { href: '/projects', name: dictionary['server-component'].projects }
+    { href: `/${lang}`, name: dictionary['server-component'].home },
+    { href: `/${lang}/experiences`, name: dictionary['server-component'].experiences },
+    { href: `/${lang}/projects`, name: dictionary['server-component'].projects }
     // { href: '/blog', name: 'Blog' }
   ];
 
   return (
-    <div className="flex-col w-full dark">
+    <div className="flex flex-col gap-10 w-full dark">
       {/* Tabs */}
-      {menuList.map(({ href, name }) => (
-        <div key={href} className="font-bold py-4 text-center">
-          <Link
-            href={lang + href}
-            onClick={() => setIsShowing(false)}
-            className={'mx-8 hover:text-blue-500'}
-          >
-            {name}
-          </Link>
-        </div>
-      ))}
+      <div className='flex flex-col gap-10 pt-10'>
+        {menuList.map(({ href, name }) => (
+          <div key={href} className="font-bold">
+            <Link
+              href={href}
+              onClick={() => setIsShowing(false)}
+              className={'mx-8 text-lg hover:text-blue-500'}
+              >
+              {name}
+            </Link>
+          </div>
+        ))}
+      </div>
 
       {/* Languages & Theme(Dark/Light) */}
-      <div className="flex items-center justify-center py-2">
+      <div className="flex items-center justify-center">
         <LocaleSwitcher />
         <ThemeButton />
       </div>
 
       {/* Profiles */}
-      <div className="flex justify-center mt-auto pt-4">
+      <div className="flex justify-center mt-auto">
         {profiles.map(({ href, alt, imagePath }) => (
           <Link key={alt} href={href} target="_blank">
             <Image

@@ -111,7 +111,7 @@ const ChatListBodyMessages = (props: any) => {
                 src={chat.avatar.image}
                 placeholder="blur"
                 className="h-[50px] w-[50px] rounded-full"
-                alt="Victor Mendes Avila"
+                alt="João Victor Mendes Avila"
               />
             </div>
 
