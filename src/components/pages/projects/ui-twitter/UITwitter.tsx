@@ -38,7 +38,7 @@ const UITwitter = () => {
           <label htmlFor="tweet">
             <img
               src="https://github.com/jvmendesavila.png"
-              alt="Victor Mendes Ávila"
+              alt="João Victor Mendes Ávila"
             />
             <textarea
               id="tweet"

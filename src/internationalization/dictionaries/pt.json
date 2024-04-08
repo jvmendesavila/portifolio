@@ -18,8 +18,8 @@
   },
   "home-page": {
     "hi": "Olá!",
-    "me": "Eu sou Victor Mendes Ávila",
-    "position": "Desenvolvedor de Software | Front-end Pleno",
+    "me": "Eu sou João João Victor Mendes Ávila",
+    "description": "Com Bacharelado em Ciências da Computação e sempre em busca de desafios, sou um engenheiro de software que ama tecnologia com mais de 6 anos de experiência como Desenvolvedor de Software, trabalhando principalmente com Javascript, Typescript, ReactJS, NodeJs and NextJS.",
     "introduction": ""
   },
   "projects-page": {
@@ -64,52 +64,96 @@
       }
     }
   },
-  "about-page": {
-    "introduction": "Formação & Experiência",
-    "paragraphs": [
-      {
-        "paragraph": "Bacharel em Ciências da Computação pela Universidade Estadual do Ceará (UECE), sempre em busca de desafios, sou um engenheiro de software que ama tecnologia com:",
-        "subparagraphs": [
-          {
-            "paragraph": "Mais de 5 anos de experiência como desenvolvedor Front-End, trabalhando com AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrações com MaxiPago, Firebase e Google Maps API's."
-          },
-          {
-            "paragraph": "1 ano de experiência como desenvolvedor Back-End, trabalhando com JAVA, Spring MVC, Spring Boot, MongoDB e MySQL."
-          }
-        ]
-      }
-    ]
-  },
   "experiences-page": {
     "companies": {
       "americanas": {
-        "activities": [
-          "Load Tests - Criar testes de carga nas aplicações com Gatling.",
-          "CI/CD - Desenvolvimento de pipelines usando Ansible, Docker, Nginx, construindo estágios diferentes e específicos para testes unitários, imagens docker e deploy(ansible e k8s).",
-          "ReactJS - Desenvolvimento de components, contextos, arquivos .tsx, testes unitários, Material UI, Clean Code e boas práticas(SOLID / Principles of Functional Programming). ",
-          "Google Maps Javascript API - Desenvolvimento de Clusters Customizados, Marcadores Customizados, Estilização de mapas e arquivos KML.",
-          "Usar Sonarqube para achar códigos sujos e junto com Jest garantir cobertura de testes para garantir um código limpo e com boas práticas.",
-          "Observability - Analisar gráficos identificando anomalias no sistema e correções de recursos necessários com o auxilio de ferramentas como Datadog & Grafana.",
-          "Kubernets - Usando Helm para manipular arquivos .yaml para se conectar com o Rancher e fazer deploy de aplicações, criando deployments, persistent volumes, persistent volumes claim, services e pods com configurações específicas: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdates e limites de recursos. "
+        "jobs": [
+          {
+            "title": "Engenheiro de Software Sênior",
+            "descriptions": [
+              "- Liderar time de estoque rápido para o envio de informações destinadas ao departamento de dados logísticos, O2O e site, com objetivo de centralizar informações.",
+              "- Arquitetura - Migração de sistemas para K8S e participação em decisões estratégicas envolvendo custos relacionados a AWS",
+              "- Desenvolvimento de microserviços em Next.js e React.js no front-end, Node.js, MongoDB, REDIS e KAFKA."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "MongoDB",
+              "Redis",
+              "Kafka",
+              "Kubernetes",
+              "Grafana",
+              "Datadog",
+              "Análise de negócios"
+            ]
+          },
+          {
+            "title": "Engenheiro de Software Pleno",
+            "descriptions": [
+              "- Desenvolvimento de sistemas internos voltados ao Front-end utilizando as tecnologias NextJS, React JS, Material UI, Typescript e Jest, seguindo boas práticas de entrega contínua, testes de carga, verificação de segurança e análise de código."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "MongoDB",
+              "Redis"
+            ]
+          }
         ]
       },
-      "ipersonality": {
-        "activities": [
-          "Criar uma rede profissional com mapeamento de softskills e trilha de desenvolvimento com Inteligência Artificial utilizando principalmente NextJS, Redux Saga e Material UI: ",
-          "https://www.goowit.com",
-          "Criar páginas web, chat entre usuários com websockets, trilha de desenvolvimento com IA e tradução para EN.",
-          "Desenvolvimento de interfaces responsívas usando Semantic-UI, Material-UI, Flexbox e seus conceitos, HTML, CSS(Media-Query and CSS Animações Simples).",
-          "Manipulação do estado da aplicação usando Redux-Thunk, Redux-Saga, SSO, NextJS, ReactJS, Ducks, Sagas, Hooks, High Order Components(HOCs).",
-          "Comunicação com Back-end usando apisauce e axios, implementando estratégias de Throttling e Debouce com Redux-Saga.",
-          "Traduzir site para PT-Br/En-USA using react.i18next."
+      "febracis": {
+        "jobs": [
+          {
+            "title": "Engenheiro de Software Júnior",
+            "descriptions": [
+              "- Criação de rede profissional com mapeamento de softskills e caminho de desenvolvimento com Inteligência Artificial utilizando principalmente TensorFlow, NextJS, Redux Saga e Material UI, mais de 300.000 usuários e 1.000 empresas.",
+              "- Trabalhando com páginas da Web, renderização no servidor, bate-papos com websockets, trilha de aprendizagem com tecnologia de IA e tradução EN (react-i18n).",
+              "https://www.goowit.com"
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js"
+            ]
+          },
+          {
+            "title": "Engenheiro de Software Estagiário",
+            "descriptions": [
+              "- Trabalhando com ReactJS para construir aplicativos responsivos com Material UI e Redux para gerenciar o estado do aplicativo."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "JavaScript"
+            ]
+          }
         ]
       },
       "elevar": {
-        "activities": [
-          "Front-End: Trabalhando com JavaScript, HTML5, CSS3, Angular JS.",
-          "Back-End: Trabalhando com JAVA, Spring MVC, Spring Boot.",
-          "Sistema PocketPet (Sistema de gerenciamento de serviços voltados a pet's): Criando CRUD's | Integração com MaxiPago API de pagamento de cartão de crédito | Integração com Firebase API para construção de websockets",
-          "Sistema Handover (Sistema de gerenciamento e acompanhamento de serviços de forma geral):  Criação de deashboards |  Integração com GoogleMaps API para trabalhar com mapas customizados | Criando Models com SQL Server | Resolvendo Bugs "
+        "jobs": [
+          {
+            "title": "Engenheiro de Software Estagiário",
+            "descriptions": [
+              "- Talking with clients to understand new features and making sprints using Agile Methodology.",
+              "- Working with Ionic, VueJS, ReactJS, Angular JS, Material UI, Integration with WebSockets, Dashboards and Custom Maps(Google Maps Javascript API)",
+              "- Working with JAVA, Spring Boot, SQL Server, MySQL and Integration with MaxiPago credit card payment API",
+              "- Using Firebase to Auth, Data Base and real-time notifications."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "JavaScript",
+              "Java",
+              "MySQL",
+              "SQL",
+              "FireBase"
+            ]
+          }
         ]
       }
     }

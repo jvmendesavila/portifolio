@@ -40,7 +40,7 @@ const MessagesListHeader = () => {
           src={chat.avatar.image}
           placeholder="blur"
           className="h-[40px] w-[40px] rounded-full mr-[8px]"
-          alt="Victor Mendes Avila"
+          alt="João Victor Mendes Avila"
         />
 
         <div className="flex flex-col">

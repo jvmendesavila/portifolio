@@ -10,12 +10,12 @@ const Tweet = (props: { content: string }) => {
     <Link href="/projects/ui-twitter/tweet" className="tweet">
       <img
         src="https://github.com/jvmendesavila.png"
-        alt="Victor Mendes Ávila"
+        alt="João Victor Mendes Ávila"
       />
 
       <div className="tweet-content">
         <div className="tweet-content-header">
-          <strong>Victor Mendes Ávila</strong>
+          <strong>João Victor Mendes Ávila</strong>
           <span>@victorma</span>
         </div>
 

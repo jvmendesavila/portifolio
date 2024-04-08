@@ -74,12 +74,12 @@ const Header = ({ dictionary }: { dictionary: dictionaryType }) => {
                   src={AvatarImage}
                   placeholder="blur"
                   className="h-24 w-24 mt-2 rounded-full"
-                  alt="Victor Mendes Avila"
+                  alt="João Victor Mendes Avila"
                 />
               </div>
               <div className="pt-4">
                 <p className="text-sm text-center font-bold">
-                  Victor Mendes Ávila
+                  João Victor Mendes Ávila
                 </p>
                 <p className="text-xs text-center">Software Engineer</p>
               </div>

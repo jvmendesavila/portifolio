@@ -35,7 +35,7 @@ const ChatListHeader = () => {
           src={AvatarImage}
           placeholder="blur"
           className="h-[40px] w-[40px] rounded-full cursor-pointer"
-          alt="Victor Mendes Avila"
+          alt="João Victor Mendes Avila"
         />
         <div className="flex gap-[10px] items-center">
           <div className="p-[8px] cursor-pointer">

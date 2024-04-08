@@ -18,8 +18,8 @@
   },
   "home-page": {
     "hi": "Hi!",
-    "me": "I'm Victor Mendes Ávila",
-    "position": "Software Developer | Front-end Mid Level",
+    "me": "I'm João João Victor Mendes Ávila",
+    "description": "With a Bachelor's degree in Computer Science and always looking for challenges, I am a software engineer who loves technology with over 6 years of experience as a Software Developer, working mainly with Javascript, Typescript, ReactJS, NodeJs and NextJS.",
     "introduction": ""
   },
   "projects-page": {
@@ -60,56 +60,100 @@
           "lessSales": "Day with less sales",
           "lessSalesDay": "sunday"
         },
-        "description": "Dashboard de vendas utilizando animações"
+        "description": "Sales Dashboard using animations"
       }
     }
-  },
-  "about-page": {
-    "introduction": "Degree & Experience:",
-    "paragraphs": [
-      {
-        "paragraph": "Bachelor's Degree in Computer Science and always looking for challenges, I'm a Software Engineer who loves technology with:",
-        "subparagraphs": [
-          {
-            "paragraph": "More than 5 years of experience as an Front-End Developer, I already worked with AngularJS, React, Redux-Saga, NextJS, Material UI/Semantic UI, integrations with MaxiPago, Firebase and Google Maps API's, Unit Test(Jest), CI/CD(Gitlab/Github), Docker, Kubernets, Rancher, Monitoring (Datadog)."
-          },
-          {
-            "paragraph": "1 year of experience as an Back-End Developer, working with JAVA, Spring MVC, Spring Boot, MongoDB and MySQL."
-          }
-        ]
-      }
-    ]
   },
   "experiences-page": {
     "companies": {
       "americanas": {
-        "activities": [
-          "Load Tests - Creating load tests with Gatling writing and running specifics scenarios.",
-          "CI/CD - Working with gitlab pipelines using Ansible, Docker, Nginx making differents and specifics stages to tests, build docker image and deploy(ansible and k8s).",
-          "ReactJS - Working with components, contexts, .tsx files, unit tests, Material UI, Clean Code and good pratices(SOLID / Principles of Functional Programming).",
-          "Google Maps Javascript API - Working with KML files, Custom Clustering and Custom Markers, Creating Styles for the Map.",
-          "Using Sonarqube to find smell codes and with Jest ensure test coverage to ensure a code clean and with good practices.",
-          "Observability - Analyze graphs identifying anomalies in the system and corrections of necessary resources with the help of tools such as Datadog & Grafana.",
-          "Kubernets - Using Helm to manage .yaml files to make connections with Rancher and deploy apps on Clusters creating deployments, persistent volumes, persistent volumes claim, services, ingresses and pods with specifics configs: namespaces, replicaSet, livenessProbe, readnessProbe, rollingUpdate and resources limits. "
+        "jobs": [
+          {
+            "title": "Senior Software Engineer",
+            "descriptions": [
+              "- Lead quick stock team to send information to the logistics data department, O2O and website, with the aim of centralizing information.",
+              "- Architecture - Systems migration to K8S and participation in strategic decisions involving costs related to AWS",
+              "- Development of microservices in NodeJS, NextJS and React on the front-end, MongoDB, REDIS and KAFKA."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "MongoDB",
+              "Redis",
+              "Kafka",
+              "Kubernetes",
+              "Grafana",
+              "Datadog",
+              "Análise de negócios"
+            ]
+          },
+          {
+            "title": "Mid Software Engineer",
+            "descriptions": [
+              "- Development of internal systems focused on the Front-end using NextJS, React JS, Material UI, Typescript and Jest technologies, following good practices for continuous delivery, load testing, security verification and code analysis."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "MongoDB",
+              "Redis"
+            ]
+          }
         ]
       },
-      "ipersonality": {
-        "activities": [
-          "Create a professional network with softskills mapping and development path with Artificial Intelligence using mainly NextJS, Redux Saga and Material UI, more than 300.000 users and 1.000 companys:",
-          "https://www.goowit.com",
-          "Creating Web Pages, Chats beetwen users with websockets, AI-powered learning trail and EN translate. ",
-          "Building responsive interfaces using Semantic-UI, Material-UI, Flexbox concepts, HTML and CSS(Media-Query and Simple Animations).",
-          "Handle application state using Redux-Thunk, Redux-Saga, SSO, NextJS, ReactJS, Ducks, Sagas, Hooks, High Order Components(HOCs).",
-          "Making connections with Back-end using apisauce and axios, building Throttling e Debounce strategy's with Redux-Saga.",
-          "Translate website to PT-Br/En-USA using react.i18next."
+      "febracis": {
+        "jobs": [
+          {
+            "title": "Junior Software Engineer",
+            "descriptions": [
+              "- Criação de rede profissional com mapeamento de softskills e caminho de desenvolvimento com Inteligência Artificial utilizando principalmente TensorFlow, NextJS, Redux Saga e Material UI, mais de 300.000 usuários e 1.000 empresas.",
+              "- Trabalhando com páginas da Web, renderização no servidor, bate-papos com websockets, trilha de aprendizagem com tecnologia de IA e tradução EN (react-i18n).",
+              "https://www.goowit.com"
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "Next.js",
+              "Node.js"
+            ]
+          },
+          {
+            "title": "Trainee Software Engineer",
+            "descriptions": [
+              "- Trabalhando com ReactJS para construir aplicativos responsivos com Material UI e Redux para gerenciar o estado do aplicativo."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "JavaScript"
+            ]
+          }
         ]
       },
       "elevar": {
-        "activities": [
-          "Front-End: Working with JavaScript, HTML5, CSS3, Angular JS.",
-          "Back-End: Working with JAVA, Spring MVC, Spring Boot.",
-          "PocketPet System (Pet services management system): Creating CRUD's |  Integration with MaxiPago credit card payment API | Integration with Firebase API to create websockets",
-          "Handover System (General service management and monitoring system):  Creating Deashboards | Integration with GoogleMaps API to work with custom maps | Creating Models with SQL Server | Resolving Bugs "
+        "jobs": [
+          {
+            "title": "Trainee Software Engineer",
+            "descriptions": [
+              "- Talking with clients to understand new features and making sprints using Agile Methodology.",
+              "- Working with Ionic, VueJS, ReactJS, Angular JS, Material UI, Integration with WebSockets, Dashboards and Custom Maps(Google Maps Javascript API)",
+              "- Working with JAVA, Spring Boot, SQL Server, MySQL and Integration with MaxiPago credit card payment API",
+              "- Using Firebase to Auth, Data Base and real-time notifications."
+            ],
+            "technologys": [
+              "Material-UI",
+              "React.js",
+              "JavaScript",
+              "Java",
+              "MySQL",
+              "SQL",
+              "FireBase"
+            ]
+          }
         ]
       }
     }

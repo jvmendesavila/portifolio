@@ -6,6 +6,7 @@ import { ArrowDownTrayIcon, ArrowUpTrayIcon } from '@heroicons/react/24/solid';
 
 // Types
 import { ProjectType } from './types';
+import { TechnologyChip } from '@/components/TechnologyChip/TechnologyChip';
 
 interface PropTypes {
   dictionary: any;
@@ -17,7 +18,8 @@ const ProjectCards = ({ dictionary, project }: PropTypes) => {
     <div
       onClick={() => window.open(project.urlProject)}
       className={
-        'w-64 pb-2 rounded-md border-4 border-indigo-500 ' +
+        'group w-64 overflow-hidden pb-2 ' +
+        'rounded-md border-4 border-gray-700 hover:border-indigo-500 ' +
         'justify-self-center bg-black text-white cursor-pointer'
       }
     >
@@ -26,7 +28,7 @@ const ProjectCards = ({ dictionary, project }: PropTypes) => {
         src={project.image}
         alt={project.title}
         placeholder="blur"
-        className="h-52 w-64"
+        className="h-52 w-64 transition-transform transform group-hover:scale-110"
       />
 
       {/* Title & Description */}
@@ -46,12 +48,7 @@ const ProjectCards = ({ dictionary, project }: PropTypes) => {
       <div className="h-24 p-2 ">{project.dictionary.description}</div>
       <div className="flex flex-wrap gap-2 p-2">
         {project.technologys.map((technology) => (
-          <span
-            key={technology}
-            className="px-4 text-xs bg-indigo-500 rounded-full"
-          >
-            {technology}
-          </span>
+          <TechnologyChip technology={technology}/>
         ))}
       </div>
       <div className="flex p-2 justify-between item-center">
