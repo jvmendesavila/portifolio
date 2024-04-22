@@ -16,7 +16,7 @@ const profiles = [
     imagePath: '/images/profiles/github.png'
   },
   {
-    href: 'https://www.linkedin.com/in/jo%C3%A3o-victor-mendes-%C3%A1vila-699b76158/',
+    href: 'https://www.linkedin.com/in/jvmendesavila',
     alt: 'Linkedin',
     imagePath: '/images/profiles/linkedin.png'
   }
